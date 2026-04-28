@@ -105,6 +105,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_o5yLEEMMEfGD1KWMcrYNXA" name="location">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YatXQUMREfGL-cguweMm8g" name="attendeemanagementimpl" type="_HMX_0EMNEfGD1KWMcrYNXA" association="_Yaq7AEMREfGL-cguweMm8g"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_tJEO8EMMEfGD1KWMcrYNXA" client="_QNvkkEMLEfGD1KWMcrYNXA" supplier="_USkE4EMLEfGD1KWMcrYNXA" contract="_USkE4EMLEfGD1KWMcrYNXA"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_mNQv4EMLEfGD1KWMcrYNXA" name="createEvent"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_yxCuoEMNEfGD1KWMcrYNXA" name="updateEvent"/>
@@ -114,11 +115,18 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_7uoxMEMMEfGD1KWMcrYNXA" name="MAttendeeManagement">
         <packagedElement xmi:type="uml:Interface" xmi:id="_BuCu4EMNEfGD1KWMcrYNXA" name="AttendeeManagement"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_HMX_0EMNEfGD1KWMcrYNXA" name="AttendeeManagementImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_g6-sAEMNEfGD1KWMcrYNXA" name="attendeeId">
+        <packagedElement xmi:type="uml:Class" xmi:id="_HMX_0EMNEfGD1KWMcrYNXA" name="AttendeeManagementImpl" visibility="private">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_g6-sAEMNEfGD1KWMcrYNXA" name="attendeeId" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_IIXmoEMQEfGL-cguweMm8g" name="phoneNumber" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OanLUEMREfGL-cguweMm8g" name="checkinimpl" type="_Z6wdcEMAEfG1Y49jyyuFTQ" association="_OaeBYEMREfGL-cguweMm8g"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_oN6uIEMNEfGD1KWMcrYNXA" client="_HMX_0EMNEfGD1KWMcrYNXA" supplier="_BuCu4EMNEfGD1KWMcrYNXA" contract="_BuCu4EMNEfGD1KWMcrYNXA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_71EzkEMQEfGL-cguweMm8g" name="createAttendee"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_-ZClIEMQEfGL-cguweMm8g" name="updateAttendee"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="___PG4EMQEfGL-cguweMm8g" name="deleteAttendee"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -139,6 +147,20 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yF41oUMJEfGD1KWMcrYNXA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_yF6q0EMJEfGD1KWMcrYNXA" name="checkinimpl" type="_Hc79oEMIEfGD1KWMcrYNXA" association="_yF1yUEMJEfGD1KWMcrYNXA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OaeBYEMREfGL-cguweMm8g" memberEnd="_OanLUEMREfGL-cguweMm8g _OaoZcEMREfGL-cguweMm8g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Oal9MEMREfGL-cguweMm8g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OamkQEMREfGL-cguweMm8g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_OaoZcEMREfGL-cguweMm8g" name="attendeemanagementimpl" type="_HMX_0EMNEfGD1KWMcrYNXA" association="_OaeBYEMREfGL-cguweMm8g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Yaq7AEMREfGL-cguweMm8g" memberEnd="_YatXQUMREfGL-cguweMm8g _Yat-UEMREfGL-cguweMm8g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YasJIEMREfGL-cguweMm8g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YatXQEMREfGL-cguweMm8g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Yat-UEMREfGL-cguweMm8g" name="eventcreationimpl" type="_QNvkkEMLEfGD1KWMcrYNXA" association="_Yaq7AEMREfGL-cguweMm8g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wj8BEEMREfGL-cguweMm8g" value="*"/>
+      </ownedEnd>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bOBkgELyEfG1Vb9L88SUjQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bOdpYELyEfG1Vb9L88SUjQ" source="PapyrusVersion">
