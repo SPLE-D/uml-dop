@@ -5,30 +5,73 @@
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_EvFc0ELzEfGX9fAZCzSKzA" name="Event">
-      <packagedElement xmi:type="uml:Package" xmi:id="_2Ct5kELzEfGX9fAZCzSKzA" name="MTicket">
-        <packagedElement xmi:type="uml:Interface" xmi:id="_Na12kEL0EfGX9fAZCzSKzA" name="Ticket"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_Q6ZGoEL0EfGX9fAZCzSKzA" name="TicketImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_bLx24EL0EfGX9fAZCzSKzA" name="ticketId" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_kQ8roEL0EfGX9fAZCzSKzA" name="isValid" visibility="protected">
+      <packagedElement xmi:type="uml:Package" xmi:id="_2Ct5kELzEfGX9fAZCzSKzA" name="DTicketCheckIn">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Q6ZGoEL0EfGX9fAZCzSKzA" name="CheckInImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kQ8roEL0EfGX9fAZCzSKzA" name="isValid" visibility="protected" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_s0GYcEL0EfGX9fAZCzSKzA" name="isUsed" visibility="protected">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_s0GYcEL0EfGX9fAZCzSKzA" name="isUsed" visibility="protected" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           </ownedAttribute>
-          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_yVgLgEL0EfGX9fAZCzSKzA" client="_Q6ZGoEL0EfGX9fAZCzSKzA" supplier="_Na12kEL0EfGX9fAZCzSKzA" contract="_Na12kEL0EfGX9fAZCzSKzA"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_mQsgYEL1EfGX9fAZCzSKzA" name="validate">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_vhf9YEL1EfGX9fAZCzSKzA" name="ticketID">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Cg1z4EMEEfG1Y49jyyuFTQ" name="checkinimpl" type="_Z6wdcEMAEfG1Y49jyyuFTQ" association="_CgufIEMEEfG1Y49jyyuFTQ"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mQsgYEL1EfGX9fAZCzSKzA" name="checkIn">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_vhf9YEL1EfGX9fAZCzSKzA" name="uniqueCode">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_047VEEL1EfGX9fAZCzSKzA" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_74jZoEL1EfGX9fAZCzSKzA" name="markAsUsed"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_vhpi0EL_EfG1Y49jyyuFTQ" name="MCheckIn">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_RCbx4EMAEfG1Y49jyyuFTQ" name="CheckIn"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Z6wdcEMAEfG1Y49jyyuFTQ" name="CheckInImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kf_90EMAEfG1Y49jyyuFTQ" name="checkInId" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ED5pcEMBEfG1Y49jyyuFTQ" name="attended" visibility="protected" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_hMzuwEMAEfG1Y49jyyuFTQ" client="_Z6wdcEMAEfG1Y49jyyuFTQ" supplier="_RCbx4EMAEfG1Y49jyyuFTQ" contract="_RCbx4EMAEfG1Y49jyyuFTQ"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_WbUssEMBEfG1Y49jyyuFTQ" name="checkIn">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_dDN70EMDEfG1Y49jyyuFTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_U6d2kEMEEfG1Y49jyyuFTQ" name="TicketCheckIn">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_mVtlcEMEEfG1Y49jyyuFTQ" client="_U6d2kEMEEfG1Y49jyyuFTQ" supplier="_2Ct5kELzEfGX9fAZCzSKzA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_SYNfwEMFEfG1Y49jyyuFTQ" name="DQRCheckIn">
+        <packagedElement xmi:type="uml:Class" xmi:id="_XlQMYEMFEfG1Y49jyyuFTQ" name="CheckInImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ngNXwkMGEfG1Y49jyyuFTQ" name="checkinimpl" type="_Z6wdcEMAEfG1Y49jyyuFTQ" association="_ngMJoEMGEfG1Y49jyyuFTQ"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_kWaxwEMFEfG1Y49jyyuFTQ" name="checkIn">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_rb1VQEMFEfG1Y49jyyuFTQ" name="QRCode">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_toCuIEMFEfG1Y49jyyuFTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_WknZUEMGEfG1Y49jyyuFTQ" name="QRCheckIn">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_emwDwEMGEfG1Y49jyyuFTQ" client="_WknZUEMGEfG1Y49jyyuFTQ" supplier="_SYNfwEMFEfG1Y49jyyuFTQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CgufIEMEEfG1Y49jyyuFTQ" memberEnd="_Cg1z4EMEEfG1Y49jyyuFTQ _Cg2a8kMEEfG1Y49jyyuFTQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Cgz-sEMEEfG1Y49jyyuFTQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Cg0lwEMEEfG1Y49jyyuFTQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Cg2a8kMEEfG1Y49jyyuFTQ" name="checkinimpl" type="_Q6ZGoEL0EfGX9fAZCzSKzA" association="_CgufIEMEEfG1Y49jyyuFTQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngMJoEMGEfG1Y49jyyuFTQ" memberEnd="_ngNXwkMGEfG1Y49jyyuFTQ _ngN-0UMGEfG1Y49jyyuFTQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ngNXwEMGEfG1Y49jyyuFTQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ngNXwUMGEfG1Y49jyyuFTQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ngN-0UMGEfG1Y49jyyuFTQ" name="checkinimpl" type="_XlQMYEMFEfG1Y49jyyuFTQ" association="_ngMJoEMGEfG1Y49jyyuFTQ"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bOBkgELyEfG1Vb9L88SUjQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bOdpYELyEfG1Vb9L88SUjQ" source="PapyrusVersion">
@@ -45,6 +88,20 @@
     </profileApplication>
   </uml:Model>
   <umlvmprofile:vm xmi:id="_yBOaEELzEfGX9fAZCzSKzA" base_Package="_EvFc0ELzEfGX9fAZCzSKzA"/>
-  <umlvmprofile:module xmi:id="_FDB3EEL0EfGX9fAZCzSKzA" base_Package="_2Ct5kELzEfGX9fAZCzSKzA"/>
-  <umlvmprofile:pk xmi:id="_CDMMYEL1EfGX9fAZCzSKzA" base_Property="_bLx24EL0EfGX9fAZCzSKzA"/>
+  <umlvmprofile:module xmi:id="_MBu4IEMAEfG1Y49jyyuFTQ" base_Package="_vhpi0EL_EfG1Y49jyyuFTQ"/>
+  <umlvmprofile:delta xmi:id="_AT00oEMCEfG1Y49jyyuFTQ" base_Package="_2Ct5kELzEfGX9fAZCzSKzA"/>
+  <umlvmprofile:modifiedClass xmi:id="_MwP5EEMCEfG1Y49jyyuFTQ" base_Class="_Q6ZGoEL0EfGX9fAZCzSKzA"/>
+  <umlvmprofile:pk xmi:id="_aBDAwEMCEfG1Y49jyyuFTQ" base_Property="_kf_90EMAEfG1Y49jyyuFTQ"/>
+  <umlvmprofile:modifies xmi:id="_gyffYEMCEfG1Y49jyyuFTQ" base_Operation="_mQsgYEL1EfGX9fAZCzSKzA"/>
+  <umlvmprofile:adds xmi:id="_6K2OwEMCEfG1Y49jyyuFTQ" base_Property="_kQ8roEL0EfGX9fAZCzSKzA"/>
+  <umlvmprofile:adds xmi:id="_7EvrMEMCEfG1Y49jyyuFTQ" base_Property="_s0GYcEL0EfGX9fAZCzSKzA"/>
+  <umlvmprofile:modifies xmi:id="_D2jCkEMEEfG1Y49jyyuFTQ" base_Association="_CgufIEMEEfG1Y49jyyuFTQ"/>
+  <umlvmprofile:feature xmi:id="_eK_mwEMEEfG1Y49jyyuFTQ" base_Component="_U6d2kEMEEfG1Y49jyyuFTQ"/>
+  <umlvmprofile:when xmi:id="_nbwAcEMEEfG1Y49jyyuFTQ" base_Dependency="_mVtlcEMEEfG1Y49jyyuFTQ"/>
+  <umlvmprofile:delta xmi:id="_Vv070EMFEfG1Y49jyyuFTQ" base_Package="_SYNfwEMFEfG1Y49jyyuFTQ"/>
+  <umlvmprofile:modifiedClass xmi:id="_aeGBwEMFEfG1Y49jyyuFTQ" base_Class="_XlQMYEMFEfG1Y49jyyuFTQ"/>
+  <umlvmprofile:modifies xmi:id="_ypnxoEMFEfG1Y49jyyuFTQ" base_Operation="_kWaxwEMFEfG1Y49jyyuFTQ"/>
+  <umlvmprofile:feature xmi:id="_bD0vkEMGEfG1Y49jyyuFTQ" base_Component="_WknZUEMGEfG1Y49jyyuFTQ"/>
+  <umlvmprofile:when xmi:id="_fwoc8EMGEfG1Y49jyyuFTQ" base_Dependency="_emwDwEMGEfG1Y49jyyuFTQ"/>
+  <umlvmprofile:modifies xmi:id="_oadZgEMGEfG1Y49jyyuFTQ" base_Association="_ngMJoEMGEfG1Y49jyyuFTQ"/>
 </xmi:XMI>
