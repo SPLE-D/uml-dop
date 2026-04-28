@@ -28,7 +28,7 @@
         <packagedElement xmi:type="uml:Interface" xmi:id="_RCbx4EMAEfG1Y49jyyuFTQ" name="CheckIn"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_Z6wdcEMAEfG1Y49jyyuFTQ" name="CheckInImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_kf_90EMAEfG1Y49jyyuFTQ" name="checkInId" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ED5pcEMBEfG1Y49jyyuFTQ" name="attended" visibility="protected" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -87,8 +87,8 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_IpiMQEMLEfGD1KWMcrYNXA" name="MEventCreation">
         <packagedElement xmi:type="uml:Class" xmi:id="_QNvkkEMLEfGD1KWMcrYNXA" name="EventCreationImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_oteC0EMLEfGD1KWMcrYNXA" name="EventId" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_oteC0EMLEfGD1KWMcrYNXA" name="eventId" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_-apg8EMLEfGD1KWMcrYNXA" name="startDate">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
@@ -117,7 +117,7 @@
         <packagedElement xmi:type="uml:Interface" xmi:id="_BuCu4EMNEfGD1KWMcrYNXA" name="AttendeeManagement"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_HMX_0EMNEfGD1KWMcrYNXA" name="AttendeeManagementImpl" visibility="private">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_g6-sAEMNEfGD1KWMcrYNXA" name="attendeeId" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_IIXmoEMQEfGL-cguweMm8g" name="phoneNumber" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -133,6 +133,9 @@
         <packagedElement xmi:type="uml:Interface" xmi:id="_CB7sgEMTEfGYX-lsrzzLvA" name="Notification"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_EJvGgEMTEfGYX-lsrzzLvA" name="NotificationImpl" visibility="public">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_p33fwEMTEfGYX-lsrzzLvA" name="attendeemanagementimpl" type="_HMX_0EMNEfGD1KWMcrYNXA" association="_p3z1YEMTEfGYX-lsrzzLvA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rPttYEMcEfGYX-lsrzzLvA" name="id" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Gc-7gEMTEfGYX-lsrzzLvA" client="_EJvGgEMTEfGYX-lsrzzLvA" supplier="_CB7sgEMTEfGYX-lsrzzLvA" contract="_CB7sgEMTEfGYX-lsrzzLvA"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_AJcrcEMUEfGYX-lsrzzLvA" name="sendNotification">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_N_wT8EMUEfGYX-lsrzzLvA" name="content" isUnique="false">
@@ -225,4 +228,6 @@
   <umlvmprofile:pk xmi:id="_uiBbYEMLEfGD1KWMcrYNXA" base_Property="_oteC0EMLEfGD1KWMcrYNXA"/>
   <umlvmprofile:module xmi:id="__FxFEEMMEfGD1KWMcrYNXA" base_Package="_7uoxMEMMEfGD1KWMcrYNXA"/>
   <umlvmprofile:module xmi:id="_A0XGIEMTEfGYX-lsrzzLvA" base_Package="_1piMcEMSEfGYX-lsrzzLvA"/>
+  <umlvmprofile:pk xmi:id="_ARnZ4EMdEfGYX-lsrzzLvA" base_Property="_rPttYEMcEfGYX-lsrzzLvA"/>
+  <umlvmprofile:pk xmi:id="_fOOcAEMdEfGYX-lsrzzLvA" base_Property="_g6-sAEMNEfGD1KWMcrYNXA"/>
 </xmi:XMI>
