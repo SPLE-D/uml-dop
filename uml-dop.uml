@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:umlvmprofile="pathmap://UML_PROFILES/uml-vm-profile.profile.uml" xsi:schemaLocation="pathmap://UML_PROFILES/uml-vm-profile.profile.uml pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XJZvsJOyEfCDfaGUJJSFbQ">
+  <uml:Model xmi:id="_bGmt4ELyEfG1Vb9L88SUjQ" name="uml-dop">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_bSPWIELyEfG1Vb9L88SUjQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_EvFc0ELzEfGX9fAZCzSKzA" name="Event">
+      <packagedElement xmi:type="uml:Package" xmi:id="_2Ct5kELzEfGX9fAZCzSKzA" name="MTicket">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_Na12kEL0EfGX9fAZCzSKzA" name="Ticket"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Q6ZGoEL0EfGX9fAZCzSKzA" name="TicketImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bLx24EL0EfGX9fAZCzSKzA" name="ticketId" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kQ8roEL0EfGX9fAZCzSKzA" name="isValid" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_s0GYcEL0EfGX9fAZCzSKzA" name="isUsed" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_yVgLgEL0EfGX9fAZCzSKzA" client="_Q6ZGoEL0EfGX9fAZCzSKzA" supplier="_Na12kEL0EfGX9fAZCzSKzA" contract="_Na12kEL0EfGX9fAZCzSKzA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mQsgYEL1EfGX9fAZCzSKzA" name="validate">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_vhf9YEL1EfGX9fAZCzSKzA" name="ticketID">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_047VEEL1EfGX9fAZCzSKzA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_74jZoEL1EfGX9fAZCzSKzA" name="markAsUsed"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bOBkgELyEfG1Vb9L88SUjQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bOdpYELyEfG1Vb9L88SUjQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bOdpYULyEfG1Vb9L88SUjQ" key="Version" value="0.0.5"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bOdpYkLyEfG1Vb9L88SUjQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bOdpY0LyEfG1Vb9L88SUjQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bOdpZELyEfG1Vb9L88SUjQ" key="Date" value="2025-09-17"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bOdpZULyEfG1Vb9L88SUjQ" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bOHrIELyEfG1Vb9L88SUjQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XJZvsJOyEfCDfaGUJJSFbQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
+    </profileApplication>
+  </uml:Model>
+  <umlvmprofile:vm xmi:id="_yBOaEELzEfGX9fAZCzSKzA" base_Package="_EvFc0ELzEfGX9fAZCzSKzA"/>
+  <umlvmprofile:module xmi:id="_FDB3EEL0EfGX9fAZCzSKzA" base_Package="_2Ct5kELzEfGX9fAZCzSKzA"/>
+  <umlvmprofile:pk xmi:id="_CDMMYEL1EfGX9fAZCzSKzA" base_Property="_bLx24EL0EfGX9fAZCzSKzA"/>
+</xmi:XMI>
