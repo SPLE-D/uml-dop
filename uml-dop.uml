@@ -129,6 +129,21 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="___PG4EMQEfGL-cguweMm8g" name="deleteAttendee"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_1piMcEMSEfGYX-lsrzzLvA" name="MNotification">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_CB7sgEMTEfGYX-lsrzzLvA" name="Notification"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_EJvGgEMTEfGYX-lsrzzLvA" name="NotificationImpl" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_p33fwEMTEfGYX-lsrzzLvA" name="attendeemanagementimpl" type="_HMX_0EMNEfGD1KWMcrYNXA" association="_p3z1YEMTEfGYX-lsrzzLvA"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Gc-7gEMTEfGYX-lsrzzLvA" client="_EJvGgEMTEfGYX-lsrzzLvA" supplier="_CB7sgEMTEfGYX-lsrzzLvA" contract="_CB7sgEMTEfGYX-lsrzzLvA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_AJcrcEMUEfGYX-lsrzzLvA" name="sendNotification">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_N_wT8EMUEfGYX-lsrzzLvA" name="content" isUnique="false">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_SYTokEMUEfGYX-lsrzzLvA" name="success" visibility="public" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_CgufIEMEEfG1Y49jyyuFTQ" memberEnd="_Cg1z4EMEEfG1Y49jyyuFTQ _Cg2a8kMEEfG1Y49jyyuFTQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Cgz-sEMEEfG1Y49jyyuFTQ" source="org.eclipse.papyrus">
@@ -161,6 +176,12 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_Yat-UEMREfGL-cguweMm8g" name="eventcreationimpl" type="_QNvkkEMLEfGD1KWMcrYNXA" association="_Yaq7AEMREfGL-cguweMm8g">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wj8BEEMREfGL-cguweMm8g" value="*"/>
       </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_p3z1YEMTEfGYX-lsrzzLvA" memberEnd="_p33fwEMTEfGYX-lsrzzLvA _p39mYEMTEfGYX-lsrzzLvA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p32RoEMTEfGYX-lsrzzLvA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p324sEMTEfGYX-lsrzzLvA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_p39mYEMTEfGYX-lsrzzLvA" name="notificationimpl" type="_EJvGgEMTEfGYX-lsrzzLvA" association="_p3z1YEMTEfGYX-lsrzzLvA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bOBkgELyEfG1Vb9L88SUjQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bOdpYELyEfG1Vb9L88SUjQ" source="PapyrusVersion">
@@ -203,4 +224,5 @@
   <umlvmprofile:module xmi:id="_LpevMEMLEfGD1KWMcrYNXA" base_Package="_IpiMQEMLEfGD1KWMcrYNXA"/>
   <umlvmprofile:pk xmi:id="_uiBbYEMLEfGD1KWMcrYNXA" base_Property="_oteC0EMLEfGD1KWMcrYNXA"/>
   <umlvmprofile:module xmi:id="__FxFEEMMEfGD1KWMcrYNXA" base_Package="_7uoxMEMMEfGD1KWMcrYNXA"/>
+  <umlvmprofile:module xmi:id="_A0XGIEMTEfGYX-lsrzzLvA" base_Package="_1piMcEMSEfGYX-lsrzzLvA"/>
 </xmi:XMI>

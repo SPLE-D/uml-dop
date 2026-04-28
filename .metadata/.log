@@ -1,0 +1,29 @@
+!SESSION 2026-04-28 21:54:40.623 -----------------------------------------------
+eclipse.buildId=4.30.0.20231201-1200
+java.version=21.0.10
+java.vendor=Arch Linux
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2026-04-28 21:55:10.888
+!MESSAGE Cannot invoke "org.eclipse.equinox.p2.query.IQueryable.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because "queriable" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.query.IQueryable.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because "queriable" is null
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.gatherApplicableAnnotations(SetupUIPlugin.java:604)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.handleProblemAnnotations(SetupUIPlugin.java:487)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.handleBrandingNotificationURI(SetupUIPlugin.java:354)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:1040)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:280)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2026-04-28 21:55:10.897
+!MESSAGE Cannot invoke "org.eclipse.equinox.p2.query.IQueryable.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because "queriable" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.query.IQueryable.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because "queriable" is null
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.gatherApplicableAnnotations(SetupUIPlugin.java:604)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.handleNotificationAnnotations(SetupUIPlugin.java:500)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.handleBrandingNotificationURI(SetupUIPlugin.java:363)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:1040)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:280)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
