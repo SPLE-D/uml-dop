@@ -1,5 +1,4 @@
 package Event.attendeemanagement.core.model;
-import Event.checkin.core.model;
 import id.ac.ui.cs.prices.winvmj.core.Route;
 import id.ac.ui.cs.prices.winvmj.core.VMJExchange;
 import java.util.*;
