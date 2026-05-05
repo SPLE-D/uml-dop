@@ -1,7 +1,7 @@
 package Event.checkin;
 
 import Event.checkin.core.model.CheckIn;
-import Event.checkin.core.model.CheckInImpl;
+import Event.checkin.core.model.invalid;
 import java.lang.reflect.Constructor;
 import java.util.logging.Logger;
 
