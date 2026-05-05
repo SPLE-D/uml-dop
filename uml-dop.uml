@@ -27,25 +27,22 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_oteC0EMLEfGD1KWMcrYNXA" name="eventId" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_-apg8EMLEfGD1KWMcrYNXA" name="startDate">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_-apg8EMLEfGD1KWMcrYNXA" name="startDate" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Z5liUEMMEfGD1KWMcrYNXA" name="endDate">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Z5liUEMMEfGD1KWMcrYNXA" name="endDate" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_d4x7wEMMEfGD1KWMcrYNXA" name="capacity">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_d4x7wEMMEfGD1KWMcrYNXA" name="capacity" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_iqQGsEMMEfGD1KWMcrYNXA" name="name">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_iqQGsEMMEfGD1KWMcrYNXA" name="name" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_o5yLEEMMEfGD1KWMcrYNXA" name="location">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_o5yLEEMMEfGD1KWMcrYNXA" name="location" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_tJEO8EMMEfGD1KWMcrYNXA" client="_QNvkkEMLEfGD1KWMcrYNXA" supplier="_USkE4EMLEfGD1KWMcrYNXA" contract="_USkE4EMLEfGD1KWMcrYNXA"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_mNQv4EMLEfGD1KWMcrYNXA" name="createEvent"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_yxCuoEMNEfGD1KWMcrYNXA" name="updateEvent"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_zv-cEEMNEfGD1KWMcrYNXA" name="deleteEvent"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Interface" xmi:id="_USkE4EMLEfGD1KWMcrYNXA" name="EventCreation"/>
       </packagedElement>
@@ -58,10 +55,10 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_IIXmoEMQEfGL-cguweMm8g" name="phoneNumber" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GM1kQEiFEfGJlqplkR1iEg" name="email" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_oN6uIEMNEfGD1KWMcrYNXA" client="_HMX_0EMNEfGD1KWMcrYNXA" supplier="_BuCu4EMNEfGD1KWMcrYNXA" contract="_BuCu4EMNEfGD1KWMcrYNXA"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_71EzkEMQEfGL-cguweMm8g" name="createAttendee"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_-ZClIEMQEfGL-cguweMm8g" name="updateAttendee"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="___PG4EMQEfGL-cguweMm8g" name="deleteAttendee"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_1piMcEMSEfGYX-lsrzzLvA" name="MNotification">
@@ -70,11 +67,11 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_rPttYEMcEfGYX-lsrzzLvA" name="notifiationId" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3e2s4EiEEfGJlqplkR1iEg" name="content" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Gc-7gEMTEfGYX-lsrzzLvA" client="_EJvGgEMTEfGYX-lsrzzLvA" supplier="_CB7sgEMTEfGYX-lsrzzLvA" contract="_CB7sgEMTEfGYX-lsrzzLvA"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_AJcrcEMUEfGYX-lsrzzLvA" name="sendNotification">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_N_wT8EMUEfGYX-lsrzzLvA" name="content" isUnique="false">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_SYTokEMUEfGYX-lsrzzLvA" name="success" visibility="public" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
@@ -86,6 +83,18 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_UeGKwEiCEfGJlqplkR1iEg" name="reportId" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_O5xUoEiEEfGJlqplkR1iEg" name="eventId" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SCsNYEiEEfGJlqplkR1iEg" name="totalAttendee" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YVmV4EiEEfGJlqplkR1iEg" name="totalRevenue" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dr-ksEiEEfGJlqplkR1iEg" name="summary" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_pqMVEEiCEfGJlqplkR1iEg" client="_GN0jEEiCEfGJlqplkR1iEg" supplier="_jRd4cEiCEfGJlqplkR1iEg" contract="_jRd4cEiCEfGJlqplkR1iEg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Interface" xmi:id="_jRd4cEiCEfGJlqplkR1iEg" name="Report"/>
@@ -93,7 +102,21 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_uzDsUEiCEfGJlqplkR1iEg" name="MReview">
         <packagedElement xmi:type="uml:Interface" xmi:id="_0VTz8EiCEfGJlqplkR1iEg" name="Review"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_1Dhk0EiCEfGJlqplkR1iEg" name="ReviewImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="__pA80EiCEfGJlqplkR1iEg" name="reviewId"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__pA80EiCEfGJlqplkR1iEg" name="reviewId" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rgXXEEiDEfGJlqplkR1iEg" name="eventId" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4k49UEiDEfGJlqplkR1iEg" name="attendeeId" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_-pAb4EiDEfGJlqplkR1iEg" name="rating" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DyL8MEiEEfGJlqplkR1iEg" name="comment" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_8gK8kEiCEfGJlqplkR1iEg" client="_1Dhk0EiCEfGJlqplkR1iEg" supplier="_0VTz8EiCEfGJlqplkR1iEg" contract="_0VTz8EiCEfGJlqplkR1iEg"/>
         </packagedElement>
       </packagedElement>
@@ -124,4 +147,5 @@
   <umlvmprofile:module xmi:id="_Ij10sEiBEfGJlqplkR1iEg" base_Package="_Fe1yoEiBEfGJlqplkR1iEg"/>
   <umlvmprofile:pk xmi:id="_cZRRkEiCEfGJlqplkR1iEg" base_Property="_UeGKwEiCEfGJlqplkR1iEg"/>
   <umlvmprofile:module xmi:id="_ywt0sEiCEfGJlqplkR1iEg" base_Package="_uzDsUEiCEfGJlqplkR1iEg"/>
+  <umlvmprofile:pk xmi:id="_bB9D4EiDEfGJlqplkR1iEg" base_Property="__pA80EiCEfGJlqplkR1iEg"/>
 </xmi:XMI>
