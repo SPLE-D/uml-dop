@@ -19,6 +19,8 @@ public abstract class CheckInComponent implements CheckIn{
 	protected int checkInId; 
 	protected int checkInId;
 	protected boolean attended;
+	@ManyToOne(targetEntity=Event.attendeemanagement.core.model.AttendeeManagementComponent.class)
+	public AttendeeManagement attendeemanagementimpl;
 	protected String objectName = CheckInComponent.class.getName();
 
 	public CheckInComponent() {
@@ -26,10 +28,11 @@ public abstract class CheckInComponent implements CheckIn{
 	} 
 
 	public CheckInComponent(
-        int checkInId, boolean attended
+        int checkInId, boolean attended, AttendeeManagementImpl attendeemanagementimpl
     ) {
         this.checkInId = checkInId;
         this.attended = attended;
+        this.attendeemanagementimpl = attendeemanagementimpl;
     }
 
 	public int getCheckInId() {
@@ -46,6 +49,9 @@ public abstract class CheckInComponent implements CheckIn{
 	public void setAttended(boolean attended) {
 		this.attended = attended;
 	}
+	public abstract AttendeeManagementImpl getAttendeemanagementimpl();
+	public abstract void setAttendeemanagementimpl(AttendeeManagementImpl attendeemanagementimpl);
+	
  
 	public abstract boolean checkIn();
 
@@ -54,6 +60,7 @@ public abstract class CheckInComponent implements CheckIn{
         return "{" +
             " checkInId='" + getCheckInId() + "'" +
             " attended='" + getAttended() + "'" +
+            " attendeemanagementimpl='" + getAttendeemanagementimpl() + "'" +
             "}";
     }
 	

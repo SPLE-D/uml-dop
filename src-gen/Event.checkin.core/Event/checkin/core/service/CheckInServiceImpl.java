@@ -27,7 +27,7 @@ public class CheckInServiceImpl extends CheckInServiceComponent{
 		
 		//to do: fix association attributes
 		
-		CheckIn checkin = CheckInFactory.createCheckIn("Event.checkin.core.model.CheckInImpl", attended);
+		CheckIn checkin = CheckInFactory.createCheckIn("Event.checkin.core.model.CheckInImpl", attended, attendeemanagementimpl);
 		Repository.saveObject(checkin);
 		return checkin;
 	}
@@ -37,7 +37,7 @@ public class CheckInServiceImpl extends CheckInServiceComponent{
 		boolean attended = (boolean) requestBody.get("attended");
 		
 		//to do: fix association attributes
-		CheckIn checkin = CheckInFactory.createCheckIn("Event.checkin.core.model.CheckInImpl",checkInId, attended);
+		CheckIn checkin = CheckInFactory.createCheckIn("Event.checkin.core.model.CheckInImpl",checkInId, attended, attendeemanagementimpl);
 		Repository.saveObject(checkin);
 		return checkin;
 	}

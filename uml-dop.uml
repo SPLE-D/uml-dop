@@ -14,6 +14,10 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ED5pcEMBEfG1Y49jyyuFTQ" name="attended" visibility="protected" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cErTY1N_EfGIgMAuQAXF3g" name="attendeemanagementimpl" type="_HMX_0EMNEfGD1KWMcrYNXA" association="_cErTYFN_EfGIgMAuQAXF3g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cEr6cFN_EfGIgMAuQAXF3g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cEr6cVN_EfGIgMAuQAXF3g" value="1"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_hMzuwEMAEfG1Y49jyyuFTQ" client="_Z6wdcEMAEfG1Y49jyyuFTQ" supplier="_RCbx4EMAEfG1Y49jyyuFTQ" contract="_RCbx4EMAEfG1Y49jyyuFTQ"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_WbUssEMBEfG1Y49jyyuFTQ" name="checkIn">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_dDN70EMDEfG1Y49jyyuFTQ" direction="return">
@@ -120,6 +124,29 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_8gK8kEiCEfGJlqplkR1iEg" client="_1Dhk0EiCEfGJlqplkR1iEg" supplier="_0VTz8EiCEfGJlqplkR1iEg" contract="_0VTz8EiCEfGJlqplkR1iEg"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_v10YEFN-EfGIgMAuQAXF3g" name="DCheckInTimeStamp">
+        <packagedElement xmi:type="uml:Class" xmi:id="_-e9LsFN-EfGIgMAuQAXF3g" name="CheckInImpl" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FTk6IFN_EfGIgMAuQAXF3g" name="timestamp">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VUhOMlN_EfGIgMAuQAXF3g" name="checkinimpl" type="_Z6wdcEMAEfG1Y49jyyuFTQ" association="_VUgnIFN_EfGIgMAuQAXF3g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VUh1QFN_EfGIgMAuQAXF3g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VUh1QVN_EfGIgMAuQAXF3g" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_VUgnIFN_EfGIgMAuQAXF3g" memberEnd="_VUhOMlN_EfGIgMAuQAXF3g _VUh1QlN_EfGIgMAuQAXF3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VUhOMFN_EfGIgMAuQAXF3g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VUhOMVN_EfGIgMAuQAXF3g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_VUh1QlN_EfGIgMAuQAXF3g" name="checkinimpl" type="_-e9LsFN-EfGIgMAuQAXF3g" association="_VUgnIFN_EfGIgMAuQAXF3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cErTYFN_EfGIgMAuQAXF3g" memberEnd="_cErTY1N_EfGIgMAuQAXF3g _cEr6clN_EfGIgMAuQAXF3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cErTYVN_EfGIgMAuQAXF3g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cErTYlN_EfGIgMAuQAXF3g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_cEr6clN_EfGIgMAuQAXF3g" name="checkinimpl" type="_Z6wdcEMAEfG1Y49jyyuFTQ" association="_cErTYFN_EfGIgMAuQAXF3g"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bOBkgELyEfG1Vb9L88SUjQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bOdpYELyEfG1Vb9L88SUjQ" source="PapyrusVersion">
@@ -148,4 +175,8 @@
   <umlvmprofile:pk xmi:id="_cZRRkEiCEfGJlqplkR1iEg" base_Property="_UeGKwEiCEfGJlqplkR1iEg"/>
   <umlvmprofile:module xmi:id="_ywt0sEiCEfGJlqplkR1iEg" base_Package="_uzDsUEiCEfGJlqplkR1iEg"/>
   <umlvmprofile:pk xmi:id="_bB9D4EiDEfGJlqplkR1iEg" base_Property="__pA80EiCEfGJlqplkR1iEg"/>
+  <umlvmprofile:modifiedClass xmi:id="_Dp-fEFN_EfGIgMAuQAXF3g" base_Class="_-e9LsFN-EfGIgMAuQAXF3g"/>
+  <umlvmprofile:adds xmi:id="_P4EzoFN_EfGIgMAuQAXF3g" base_Property="_FTk6IFN_EfGIgMAuQAXF3g"/>
+  <umlvmprofile:modifies xmi:id="_bMa1sFN_EfGIgMAuQAXF3g" base_Association="_VUgnIFN_EfGIgMAuQAXF3g"/>
+  <umlvmprofile:delta xmi:id="_m5UhsFN_EfGIgMAuQAXF3g" base_Package="_v10YEFN-EfGIgMAuQAXF3g"/>
 </xmi:XMI>

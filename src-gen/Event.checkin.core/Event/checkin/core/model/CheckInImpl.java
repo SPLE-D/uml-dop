@@ -19,15 +19,17 @@ import javax.persistence.OneToMany;
 @Table(name="checkin_impl")
 public class CheckInImpl extends CheckInComponent {
 
-	public CheckInImpl(int checkInId, boolean attended) {
+	public CheckInImpl(int checkInId, boolean attended, AttendeeManagementImpl attendeemanagementimpl) {
 		this.checkInId = checkInId;
 		this.attended = attended;
+		this.attendeemanagementimpl = attendeemanagementimpl;
 	}
 
-	public CheckInImpl(int checkInId, boolean attended) {
+	public CheckInImpl(int checkInId, boolean attended, AttendeeManagementImpl attendeemanagementimpl) {
 		Random r = new Random();
 		this.checkInId = Math.abs(r.nextInt());
 		this.attended = attended;
+		this.attendeemanagementimpl = attendeemanagementimpl;
 	}
 
 	public CheckInImpl() { }
@@ -56,6 +58,7 @@ public class CheckInImpl extends CheckInComponent {
         HashMap<String, Object> checkinMap = new HashMap<String,Object>();
 		checkinMap.put("checkInId",getCheckInId());
 		checkinMap.put("attended",getAttended());
+		checkinMap.put("attendeemanagementimpl",getAttendeemanagementimpl());
 
         return checkinMap;
     }
