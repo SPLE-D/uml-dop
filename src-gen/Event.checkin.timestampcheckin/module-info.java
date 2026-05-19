@@ -1,8 +1,8 @@
-module Event.checkin.checkintimestamp {
+module Event.checkin.timestampcheckin {
 	requires Event.checkin.core;
-	exports Event.checkin.checkintimestamp.model;
-	exports Event.checkin.checkintimestamp.resource;
-	exports Event.checkin.checkintimestamp.service;
+	exports Event.checkin.timestampcheckin.model;
+	exports Event.checkin.timestampcheckin.resource;
+	exports Event.checkin.timestampcheckin.service;
 
 	requires id.ac.ui.cs.prices.winvmj.core;
 	requires id.ac.ui.cs.prices.winvmj.hibernate;
@@ -12,5 +12,5 @@ module Event.checkin.checkintimestamp {
 	requires java.naming;
 	requires java.net.http;
 
-	opens Event.checkin.checkintimestamp.model to org.hibernate.orm.core, gson, id.ac.ui.cs.prices.winvmj.hibernate;
+	opens Event.checkin.timestampcheckin.model to org.hibernate.orm.core, gson, id.ac.ui.cs.prices.winvmj.hibernate;
 }

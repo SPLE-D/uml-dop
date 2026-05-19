@@ -124,7 +124,7 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_8gK8kEiCEfGJlqplkR1iEg" client="_1Dhk0EiCEfGJlqplkR1iEg" supplier="_0VTz8EiCEfGJlqplkR1iEg" contract="_0VTz8EiCEfGJlqplkR1iEg"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_v10YEFN-EfGIgMAuQAXF3g" name="DCheckInTimeStamp">
+      <packagedElement xmi:type="uml:Package" xmi:id="_v10YEFN-EfGIgMAuQAXF3g" name="DTimeStampCheckIn">
         <packagedElement xmi:type="uml:Class" xmi:id="_-e9LsFN-EfGIgMAuQAXF3g" name="CheckInImpl" visibility="public">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_FTk6IFN_EfGIgMAuQAXF3g" name="timestamp">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>

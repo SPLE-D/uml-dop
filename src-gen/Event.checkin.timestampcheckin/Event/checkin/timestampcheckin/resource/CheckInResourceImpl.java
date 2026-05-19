@@ -1,4 +1,4 @@
-package Event.checkin.checkintimestamp.resource;
+package Event.checkin.timestampcheckin.resource;
 import java.util.*;
 import java.lang.*;
 
@@ -11,30 +11,30 @@ import Event.checkin.core.resource.CheckInResourceComponent;
 import Event.checkin.core.model.CheckIn;
 import Event.checkin.core.model.CheckInImpl;
 import Event.checkin.core.service.CheckInServiceComponent;
-import Event.checkin.checkintimestamp.service.CheckInServiceImpl;
+import Event.checkin.timestampcheckin.service.CheckInServiceImpl;
 
 public class CheckInResourceImpl extends CheckInResourceDecorator {
 	protected CheckInServiceComponent recordComponent;
-	private CheckInServiceImpl checkincheckintimestampServiceImpl = new CheckInServiceImpl(recordComponent);
+	private CheckInServiceImpl checkintimestampcheckinServiceImpl = new CheckInServiceImpl(recordComponent);
 
     public CheckInResourceImpl (CheckInResourceComponent record) {
         super(record);
     }
 
     
-    @Route(url="call/checkintimestamp/save")
+    @Route(url="call/timestampcheckin/save")
     public List<HashMap<String,Object>> saveCheckIn(VMJExchange vmjExchange){
 		if (vmjExchange.getHttpMethod().equals("OPTIONS")) {
 			return null;
 		}
-		CheckIn checkincheckintimestamp = createCheckIn(vmjExchange);
+		CheckIn checkintimestampcheckin = createCheckIn(vmjExchange);
 		return getAllCheckIn(vmjExchange);
 	}
 
     public CheckIn createCheckIn(VMJExchange vmjExchange){
 		if (vmjExchange.getHttpMethod().equals("POST")) {
 		    Map<String, Object> requestBody = vmjExchange.getPayload(); 
-			CheckIn result = checkincheckintimestampServiceImpl.createCheckIn(requestBody);
+			CheckIn result = checkintimestampcheckinServiceImpl.createCheckIn(requestBody);
 			return result;
 		}
 		throw new NotFoundException("Route tidak ditemukan");
@@ -43,53 +43,53 @@ public class CheckInResourceImpl extends CheckInResourceDecorator {
     public CheckIn createCheckIn(VMJExchange vmjExchange, UUID id){
 		if (vmjExchange.getHttpMethod().equals("POST")) {
 		    Map<String, Object> requestBody = vmjExchange.getPayload(); 
-			CheckIn result = checkincheckintimestampServiceImpl.createCheckIn(requestBody, id);
+			CheckIn result = checkintimestampcheckinServiceImpl.createCheckIn(requestBody, id);
 			return result;
 		}
 		throw new NotFoundException("Route tidak ditemukan");
 	}
 
 	
-    @Route(url="call/checkintimestamp/update")
+    @Route(url="call/timestampcheckin/update")
     public HashMap<String, Object> updateCheckIn(VMJExchange vmjExchange){
 		Map<String, Object> requestBody = vmjExchange.getPayload(); 
 		if (vmjExchange.getHttpMethod().equals("OPTIONS")){
 			return null;
 		}
-		return checkincheckintimestampServiceImpl.updateCheckIn(requestBody);
+		return checkintimestampcheckinServiceImpl.updateCheckIn(requestBody);
 	}
 
 	
-    @Route(url="call/checkintimestamp/detail")
+    @Route(url="call/timestampcheckin/detail")
     public HashMap<String, Object> getCheckIn(VMJExchange vmjExchange){
 		return record.getCheckIn(vmjExchange);
 	}
 
 	
-    @Route(url="call/checkintimestamp/list")
+    @Route(url="call/timestampcheckin/list")
     public List<HashMap<String,Object>> getAllCheckIn(VMJExchange vmjExchange){
 		Map<String, Object> requestBody = vmjExchange.getPayload();
-		return checkincheckintimestampServiceImpl.getAllCheckIn();
+		return checkintimestampcheckinServiceImpl.getAllCheckIn();
 	}
 
-    public List<HashMap<String,Object>> transformCheckInListToHashMap(List<CheckIn> CheckInCheckInTimeStampList){
+    public List<HashMap<String,Object>> transformCheckInListToHashMap(List<CheckIn> CheckInTimeStampCheckInList){
 		List<HashMap<String,Object>> resultList = new ArrayList<HashMap<String,Object>>();
-        for(int i = 0; i < CheckInCheckInTimeStampList.size(); i++) {
-            resultList.add(CheckInCheckInTimeStampList.get(i).toHashMap());
+        for(int i = 0; i < CheckInTimeStampCheckInList.size(); i++) {
+            resultList.add(CheckInTimeStampCheckInList.get(i).toHashMap());
         }
 
         return resultList;
 	}
 
 	
-    @Route(url="call/checkintimestamp/delete")
+    @Route(url="call/timestampcheckin/delete")
     public List<HashMap<String,Object>> deleteCheckIn(VMJExchange vmjExchange){
 		Map<String, Object> requestBody = vmjExchange.getPayload(); 
 		if (vmjExchange.getHttpMethod().equals("OPTIONS")) {
 			return null;
 		}
 		
-		return checkincheckintimestampServiceImpl.deleteCheckIn(requestBody);
+		return checkintimestampcheckinServiceImpl.deleteCheckIn(requestBody);
 	}
 
 	

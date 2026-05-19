@@ -1,4 +1,4 @@
-package Event.checkin.checkintimestamp.service;
+package Event.checkin.timestampcheckin.service;
 
 import java.util.*;
 import java.lang.*;
@@ -21,10 +21,10 @@ public class CheckInServiceImpl extends CheckInServiceDecorator {
 		String checkInIdStr = (String) requestBody.get("checkInId");
 		int checkInId = Integer.parseInt(checkInIdStr);
 		boolean attended = (boolean) requestBody.get("attended");
-		CheckIn checkincheckintimestamp = record.createCheckIn(requestBody);
-		CheckIn checkincheckintimestampdeco = CheckInFactory.createCheckIn("Event.checkin.checkintimestamp", checkincheckintimestamp, checkInId, attended, attendeemanagementimpl, timestamp);
-		Repository.saveObject(checkincheckintimestampdeco);
-		return checkincheckintimestampdeco;
+		CheckIn checkintimestampcheckin = record.createCheckIn(requestBody);
+		CheckIn checkintimestampcheckindeco = CheckInFactory.createCheckIn("Event.checkin.timestampcheckin", checkintimestampcheckin, checkInId, attended, attendeemanagementimpl, timestamp);
+		Repository.saveObject(checkintimestampcheckindeco);
+		return checkintimestampcheckindeco;
 	}
 
 	public CheckIn createCheckIn(Map<String, Object> requestBody, int id){
@@ -34,28 +34,28 @@ public class CheckInServiceImpl extends CheckInServiceDecorator {
 		boolean attended = (boolean) requestBody.get("attended");
 		UUID recordCheckInCheckInId = ((CheckInDecorator) savedCheckIn).getCheckInId();
 		CheckIn CheckIn = record.createCheckIn(requestBody, recordCheckInCheckInId);
-		CheckIn checkincheckintimestamp = CheckInFactory.createCheckIn("Event.checkin.checkintimestamp.model.CheckInImpl", CheckIn, checkInId, attended, attendeemanagementimpl, timestamp);
-		return checkincheckintimestamp;
+		CheckIn checkintimestampcheckin = CheckInFactory.createCheckIn("Event.checkin.timestampcheckin.model.CheckInImpl", CheckIn, checkInId, attended, attendeemanagementimpl, timestamp);
+		return checkintimestampcheckin;
 	}
 
     public HashMap<String, Object> updateCheckIn(Map<String, Object> requestBody){
 		String idStr = (String) requestBody.get("checkInId");
 		
-		CheckIn checkincheckintimestamp = Repository.getObject(id);
-		checkincheckintimestamp = createCheckIn(requestBody, id);
+		CheckIn checkintimestampcheckin = Repository.getObject(id);
+		checkintimestampcheckin = createCheckIn(requestBody, id);
 		
-		Repository.updateObject(checkincheckintimestamp);
-		checkincheckintimestamp = Repository.getObject(id);
+		Repository.updateObject(checkintimestampcheckin);
+		checkintimestampcheckin = Repository.getObject(id);
 		
 		//to do: fix association attributes
 		
-		return checkincheckintimestamp.toHashMap();
+		return checkintimestampcheckin.toHashMap();
 	}
 
 	public HashMap<String, Object> getCheckIn(String idStr){
 		int id = Integer.parseInt(idStr);
-		CheckIn checkincheckintimestamp = Repository.getObject(id);
-		return checkincheckintimestamp.toHashMap();
+		CheckIn checkintimestampcheckin = Repository.getObject(id);
+		return checkintimestampcheckin.toHashMap();
 	}
 
 	public HashMap<String, Object> getCheckInById(int id){
@@ -70,7 +70,7 @@ public class CheckInServiceImpl extends CheckInServiceDecorator {
 	}
 
     public List<HashMap<String,Object>> getAllCheckIn(){
-		List<CheckIn> List = Repository.getAllObject("checkin_checkintimestamp");
+		List<CheckIn> List = Repository.getAllObject("checkin_timestampcheckin");
 		return transformListToHashMap(List);
 	}
 

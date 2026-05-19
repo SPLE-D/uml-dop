@@ -1,4 +1,4 @@
-package Event.checkin.checkintimestamp.model;
+package Event.checkin.timestampcheckin.model;
 
 import java.util.*;
 import java.lang.*;
@@ -13,8 +13,8 @@ import Event.checkin.core.model.CheckInDecorator;
 import Event.checkin.core.model.CheckIn;
 import Event.checkin.core.model.CheckInComponent;
 
-@Entity(name="checkin_checkintimestamp")
-@Table(name="checkin_checkintimestamp")
+@Entity(name="checkin_timestampcheckin")
+@Table(name="checkin_timestampcheckin")
 public class CheckInImpl extends CheckInDecorator {
 
 	public EDate timestamp;
