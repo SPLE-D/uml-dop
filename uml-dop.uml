@@ -121,6 +121,37 @@
         </packagedElement>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NddooFNOEfGiH6Q1wWpgzg" memberEnd="_Nde2wFNOEfGiH6Q1wWpgzg _Ndfd0VNOEfGiH6Q1wWpgzg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NdePsFNOEfGiH6Q1wWpgzg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NdePsVNOEfGiH6Q1wWpgzg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ndfd0VNOEfGiH6Q1wWpgzg" name="eventcreationimpl" type="_VM8SQFNNEfGiH6Q1wWpgzg" association="_NddooFNOEfGiH6Q1wWpgzg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TJIK8FNOEfGiH6Q1wWpgzg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TJQt0FNOEfGiH6Q1wWpgzg" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_haTKgFNOEfGiH6Q1wWpgzg" memberEnd="_haUYolNOEfGiH6Q1wWpgzg _haU_sVNOEfGiH6Q1wWpgzg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_haUYoFNOEfGiH6Q1wWpgzg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_haUYoVNOEfGiH6Q1wWpgzg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_haU_sVNOEfGiH6Q1wWpgzg" name="eventcreationimpl" type="_VM8SQFNNEfGiH6Q1wWpgzg" association="_haTKgFNOEfGiH6Q1wWpgzg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_GEJuMFNNEfGiH6Q1wWpgzg" name="DTypeEventCreation" visibility="package">
+      <packagedElement xmi:type="uml:Class" xmi:id="_VM8SQFNNEfGiH6Q1wWpgzg" name="EventCreationImpl">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_uKR5kFNNEfGiH6Q1wWpgzg" name="eventType" visibility="protected" type="_NddooFNOEfGiH6Q1wWpgzg" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Nde2wFNOEfGiH6Q1wWpgzg" name="eventtype" type="_fAP_YFNNEfGiH6Q1wWpgzg" association="_NddooFNOEfGiH6Q1wWpgzg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sq0eUFNOEfGiH6Q1wWpgzg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_haUYolNOEfGiH6Q1wWpgzg" name="eventcreationimpl" type="_QNvkkEMLEfGD1KWMcrYNXA" association="_haTKgFNOEfGiH6Q1wWpgzg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_haUYo1NOEfGiH6Q1wWpgzg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_haU_sFNOEfGiH6Q1wWpgzg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_fAP_YFNNEfGiH6Q1wWpgzg" name="EventType">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_myOt8FNNEfGiH6Q1wWpgzg" name="PUBLIC"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_olI2AFNNEfGiH6Q1wWpgzg" name="PRIVATE"/>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bOBkgELyEfG1Vb9L88SUjQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bOdpYELyEfG1Vb9L88SUjQ" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bOdpYULyEfG1Vb9L88SUjQ" key="Version" value="0.0.5"/>
@@ -148,4 +179,7 @@
   <umlvmprofile:pk xmi:id="_cZRRkEiCEfGJlqplkR1iEg" base_Property="_UeGKwEiCEfGJlqplkR1iEg"/>
   <umlvmprofile:module xmi:id="_ywt0sEiCEfGJlqplkR1iEg" base_Package="_uzDsUEiCEfGJlqplkR1iEg"/>
   <umlvmprofile:pk xmi:id="_bB9D4EiDEfGJlqplkR1iEg" base_Property="__pA80EiCEfGJlqplkR1iEg"/>
+  <umlvmprofile:delta xmi:id="_Qa-YEFNNEfGiH6Q1wWpgzg" base_Package="_GEJuMFNNEfGiH6Q1wWpgzg"/>
+  <umlvmprofile:modifiedClass xmi:id="_ZBkacFNNEfGiH6Q1wWpgzg" base_Class="_VM8SQFNNEfGiH6Q1wWpgzg"/>
+  <umlvmprofile:modifies xmi:id="_xwShgFNOEfGiH6Q1wWpgzg" base_Association="_haTKgFNOEfGiH6Q1wWpgzg"/>
 </xmi:XMI>
