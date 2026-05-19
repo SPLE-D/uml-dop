@@ -120,6 +120,23 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_8gK8kEiCEfGJlqplkR1iEg" client="_1Dhk0EiCEfGJlqplkR1iEg" supplier="_0VTz8EiCEfGJlqplkR1iEg" contract="_0VTz8EiCEfGJlqplkR1iEg"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_CjLXcFNxEfGSmYgvmu7KnQ" name="DClassAttendeeManagement">
+        <packagedElement xmi:type="uml:Class" xmi:id="_dS7XkFNxEfGSmYgvmu7KnQ" name="AttendeeManagementImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5-4MYFN2EfGSmYgvmu7KnQ" name="attendeeClass" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RWyNUFN_EfGSmYgvmu7KnQ" type="_HMX_0EMNEfGD1KWMcrYNXA" association="_RWq4kFN_EfGSmYgvmu7KnQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RWyNUVN_EfGSmYgvmu7KnQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RWy0YFN_EfGSmYgvmu7KnQ" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RWq4kFN_EfGSmYgvmu7KnQ" visibility="protected" memberEnd="_RWyNUFN_EfGSmYgvmu7KnQ _RWzbcFN_EfGSmYgvmu7KnQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RWwYIFN_EfGSmYgvmu7KnQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RWw_MFN_EfGSmYgvmu7KnQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RWzbcFN_EfGSmYgvmu7KnQ" type="_dS7XkFNxEfGSmYgvmu7KnQ" association="_RWq4kFN_EfGSmYgvmu7KnQ"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bOBkgELyEfG1Vb9L88SUjQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bOdpYELyEfG1Vb9L88SUjQ" source="PapyrusVersion">
@@ -148,4 +165,8 @@
   <umlvmprofile:pk xmi:id="_cZRRkEiCEfGJlqplkR1iEg" base_Property="_UeGKwEiCEfGJlqplkR1iEg"/>
   <umlvmprofile:module xmi:id="_ywt0sEiCEfGJlqplkR1iEg" base_Package="_uzDsUEiCEfGJlqplkR1iEg"/>
   <umlvmprofile:pk xmi:id="_bB9D4EiDEfGJlqplkR1iEg" base_Property="__pA80EiCEfGJlqplkR1iEg"/>
+  <umlvmprofile:delta xmi:id="_a4-doFNxEfGSmYgvmu7KnQ" base_Package="_CjLXcFNxEfGSmYgvmu7KnQ"/>
+  <umlvmprofile:modifiedClass xmi:id="_gnxaMFN2EfGSmYgvmu7KnQ" base_Class="_dS7XkFNxEfGSmYgvmu7KnQ"/>
+  <umlvmprofile:adds xmi:id="_-NI8kFN2EfGSmYgvmu7KnQ" base_Property="_5-4MYFN2EfGSmYgvmu7KnQ"/>
+  <umlvmprofile:modifies xmi:id="_Vu8gYFN_EfGSmYgvmu7KnQ" base_Association="_RWq4kFN_EfGSmYgvmu7KnQ"/>
 </xmi:XMI>
