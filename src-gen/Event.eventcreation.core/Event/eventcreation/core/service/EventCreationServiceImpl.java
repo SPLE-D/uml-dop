@@ -23,10 +23,6 @@ import id.ac.ui.cs.prices.winvmj.auth.annotations.Restricted;
 public class EventCreationServiceImpl extends EventCreationServiceComponent{
 
     public EventCreation createEventCreation(Map<String, Object> requestBody){
-		String startDateStr = (String) requestBody.get("startDate");
-		int startDate = Integer.parseInt(startDateStr);
-		String endDateStr = (String) requestBody.get("endDate");
-		int endDate = Integer.parseInt(endDateStr);
 		String capacityStr = (String) requestBody.get("capacity");
 		int capacity = Integer.parseInt(capacityStr);
 		String name = (String) requestBody.get("name");
@@ -41,10 +37,6 @@ public class EventCreationServiceImpl extends EventCreationServiceComponent{
 
 	public EventCreation createEventCreation(Map<String, Object> requestBody, int id){
 		int eventId = id;
-		String startDateStr = (String) requestBody.get("startDate");
-		int startDate = Integer.parseInt(startDateStr);
-		String endDateStr = (String) requestBody.get("endDate");
-		int endDate = Integer.parseInt(endDateStr);
 		String capacityStr = (String) requestBody.get("capacity");
 		int capacity = Integer.parseInt(capacityStr);
 		String name = (String) requestBody.get("name");
@@ -60,12 +52,6 @@ public class EventCreationServiceImpl extends EventCreationServiceComponent{
 		String idStr = (String) requestBody.get("eventId");
 		int id = Integer.parseInt(idStr);
 		EventCreation eventcreation = Repository.getObject(id);
-		
-		String startDateStr = (String) requestBody.get("startDate");
-		eventcreation.setStartDate(Integer.parseInt(startDateStr));
-		
-		String endDateStr = (String) requestBody.get("endDate");
-		eventcreation.setEndDate(Integer.parseInt(endDateStr));
 		
 		String capacityStr = (String) requestBody.get("capacity");
 		eventcreation.setCapacity(Integer.parseInt(capacityStr));

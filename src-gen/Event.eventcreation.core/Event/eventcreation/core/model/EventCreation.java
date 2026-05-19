@@ -7,10 +7,10 @@ import java.lang.*;
 public interface EventCreation {
 	    public int getEventId();
 	    public void setEventId(int eventId);
-	    public int getStartDate();
-	    public void setStartDate(int startDate);
-	    public int getEndDate();
-	    public void setEndDate(int endDate);
+	    public EDate getStartDate();
+	    public void setStartDate(EDate startDate);
+	    public EDate getEndDate();
+	    public void setEndDate(EDate endDate);
 	    public int getCapacity();
 	    public void setCapacity(int capacity);
 	    public String getName();

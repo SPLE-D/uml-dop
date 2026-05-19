@@ -18,8 +18,8 @@ public abstract class EventCreationComponent implements EventCreation{
 	@Id
 	protected int eventId; 
 	protected int eventId;
-	protected int startDate;
-	protected int endDate;
+	protected EDate startDate;
+	protected EDate endDate;
 	protected int capacity;
 	protected String name;
 	protected String location;
@@ -30,7 +30,7 @@ public abstract class EventCreationComponent implements EventCreation{
 	} 
 
 	public EventCreationComponent(
-        int eventId, int startDate, int endDate, int capacity, String name, String location
+        int eventId, EDate startDate, EDate endDate, int capacity, String name, String location
     ) {
         this.eventId = eventId;
         this.startDate = startDate;
@@ -47,18 +47,18 @@ public abstract class EventCreationComponent implements EventCreation{
 	public void setEventId(int eventId) {
 		this.eventId = eventId;
 	}
-	public int getStartDate() {
+	public EDate getStartDate() {
 		return this.startDate;
 	}
 
-	public void setStartDate(int startDate) {
+	public void setStartDate(EDate startDate) {
 		this.startDate = startDate;
 	}
-	public int getEndDate() {
+	public EDate getEndDate() {
 		return this.endDate;
 	}
 
-	public void setEndDate(int endDate) {
+	public void setEndDate(EDate endDate) {
 		this.endDate = endDate;
 	}
 	public int getCapacity() {

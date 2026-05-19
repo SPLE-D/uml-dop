@@ -40,16 +40,16 @@ public abstract class EventCreationDecorator extends EventCreationComponent{
 	public void setEventId(int eventId) {
 		record.setEventId(eventId);
 	}
-	public int getStartDate() {
+	public EDate getStartDate() {
 		return record.getStartDate();
 	}
-	public void setStartDate(int startDate) {
+	public void setStartDate(EDate startDate) {
 		record.setStartDate(startDate);
 	}
-	public int getEndDate() {
+	public EDate getEndDate() {
 		return record.getEndDate();
 	}
-	public void setEndDate(int endDate) {
+	public void setEndDate(EDate endDate) {
 		record.setEndDate(endDate);
 	}
 	public int getCapacity() {
