@@ -1,7 +1,7 @@
 package Event.report;
 
 import Event.report.core.model.Report;
-import Event.report.core.model.invalid;
+import Event.report.core.model.ReportImpl;
 import java.lang.reflect.Constructor;
 import java.util.logging.Logger;
 

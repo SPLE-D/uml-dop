@@ -120,6 +120,27 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_8gK8kEiCEfGJlqplkR1iEg" client="_1Dhk0EiCEfGJlqplkR1iEg" supplier="_0VTz8EiCEfGJlqplkR1iEg" contract="_0VTz8EiCEfGJlqplkR1iEg"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ODgtcFN5EfG6LY8PoXJ8DA" name="DPriorityReport">
+        <packagedElement xmi:type="uml:Class" xmi:id="_eyAEAFN5EfG6LY8PoXJ8DA" name="ReportImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yW4Y4VN5EfG6LY8PoXJ8DA" name="reportimpl" type="_GN0jEEiCEfGJlqplkR1iEg" association="_yW3x0FN5EfG6LY8PoXJ8DA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yW4Y4lN5EfG6LY8PoXJ8DA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yW4Y41N5EfG6LY8PoXJ8DA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_0nkXMFN7EfG6LY8PoXJ8DA" name="PriorityReport" visibility="public" type="_gwWxoFN6EfG6LY8PoXJ8DA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_gwWxoFN6EfG6LY8PoXJ8DA" name="PriorityReport">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nghocFN7EfG6LY8PoXJ8DA" name="LOW"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_tNP6sFN7EfG6LY8PoXJ8DA" name="MEDIUM"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_u7iBcFN7EfG6LY8PoXJ8DA" name="HIGH"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_v0r3AFN7EfG6LY8PoXJ8DA" name="CRITICAL"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yW3x0FN5EfG6LY8PoXJ8DA" memberEnd="_yW4Y4VN5EfG6LY8PoXJ8DA _yW4_8FN5EfG6LY8PoXJ8DA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yW3x0VN5EfG6LY8PoXJ8DA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yW4Y4FN5EfG6LY8PoXJ8DA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_yW4_8FN5EfG6LY8PoXJ8DA" name="reportimpl" type="_eyAEAFN5EfG6LY8PoXJ8DA" association="_yW3x0FN5EfG6LY8PoXJ8DA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bOBkgELyEfG1Vb9L88SUjQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bOdpYELyEfG1Vb9L88SUjQ" source="PapyrusVersion">
@@ -148,4 +169,8 @@
   <umlvmprofile:pk xmi:id="_cZRRkEiCEfGJlqplkR1iEg" base_Property="_UeGKwEiCEfGJlqplkR1iEg"/>
   <umlvmprofile:module xmi:id="_ywt0sEiCEfGJlqplkR1iEg" base_Package="_uzDsUEiCEfGJlqplkR1iEg"/>
   <umlvmprofile:pk xmi:id="_bB9D4EiDEfGJlqplkR1iEg" base_Property="__pA80EiCEfGJlqplkR1iEg"/>
+  <umlvmprofile:delta xmi:id="_btaRoFN5EfG6LY8PoXJ8DA" base_Package="_ODgtcFN5EfG6LY8PoXJ8DA"/>
+  <umlvmprofile:modifiedClass xmi:id="_gP8osFN5EfG6LY8PoXJ8DA" base_Class="_eyAEAFN5EfG6LY8PoXJ8DA"/>
+  <umlvmprofile:modifies xmi:id="_EoXMMFN6EfG6LY8PoXJ8DA" base_Association="_yW3x0FN5EfG6LY8PoXJ8DA"/>
+  <umlvmprofile:adds xmi:id="_6RkFkFN7EfG6LY8PoXJ8DA" base_Property="_0nkXMFN7EfG6LY8PoXJ8DA"/>
 </xmi:XMI>
