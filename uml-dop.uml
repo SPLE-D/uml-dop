@@ -122,10 +122,16 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_NCqjwF2mEfGI7OcajRccyg" name="DTargetedNotification">
         <packagedElement xmi:type="uml:Class" xmi:id="_eEEPQF2mEfGI7OcajRccyg" name="NotificationImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_DQSOQF2nEfGI7OcajRccyg" name="target" type="_HMX_0EMNEfGD1KWMcrYNXA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DQSOQF2nEfGI7OcajRccyg" name="target">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_YiSzUF2nEfGI7OcajRccyg" name="notificationimpl" type="_EJvGgEMTEfGYX-lsrzzLvA" association="_YiQXEF2nEfGI7OcajRccyg">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YiSzUV2nEfGI7OcajRccyg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YiTaYF2nEfGI7OcajRccyg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PP0PcF20EfGJUa_XxAxTuA" name="attendeemanagementimpl" type="_HMX_0EMNEfGD1KWMcrYNXA" association="_PPsToF20EfGJUa_XxAxTuA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PP02gF20EfGJUa_XxAxTuA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PP2EoF20EfGJUa_XxAxTuA" value="1"/>
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
@@ -135,6 +141,12 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YiSMQV2nEfGI7OcajRccyg" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_YiTaYV2nEfGI7OcajRccyg" name="notificationimpl" type="_eEEPQF2mEfGI7OcajRccyg" association="_YiQXEF2nEfGI7OcajRccyg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_PPsToF20EfGJUa_XxAxTuA" memberEnd="_PP0PcF20EfGJUa_XxAxTuA _PP3SwF20EfGJUa_XxAxTuA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PPyaQF20EfGJUa_XxAxTuA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PPzBUF20EfGJUa_XxAxTuA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_PP3SwF20EfGJUa_XxAxTuA" name="notificationimpl" type="_eEEPQF2mEfGI7OcajRccyg" association="_PPsToF20EfGJUa_XxAxTuA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bOBkgELyEfG1Vb9L88SUjQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bOdpYELyEfG1Vb9L88SUjQ" source="PapyrusVersion">
