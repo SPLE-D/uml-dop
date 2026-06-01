@@ -62,7 +62,7 @@
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_1piMcEMSEfGYX-lsrzzLvA" name="MNotification">
-        <packagedElement xmi:type="uml:Interface" xmi:id="_CB7sgEMTEfGYX-lsrzzLvA" name="Notification"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_CB7sgEMTEfGYX-lsrzzLvA" name="Notification" visibility="public"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_EJvGgEMTEfGYX-lsrzzLvA" name="NotificationImpl" visibility="public">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_rPttYEMcEfGYX-lsrzzLvA" name="notifiationId" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -120,6 +120,21 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_8gK8kEiCEfGJlqplkR1iEg" client="_1Dhk0EiCEfGJlqplkR1iEg" supplier="_0VTz8EiCEfGJlqplkR1iEg" contract="_0VTz8EiCEfGJlqplkR1iEg"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NCqjwF2mEfGI7OcajRccyg" name="DTargetedNotification">
+        <packagedElement xmi:type="uml:Class" xmi:id="_eEEPQF2mEfGI7OcajRccyg" name="NotificationImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DQSOQF2nEfGI7OcajRccyg" name="target" type="_HMX_0EMNEfGD1KWMcrYNXA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YiSzUF2nEfGI7OcajRccyg" name="notificationimpl" type="_EJvGgEMTEfGYX-lsrzzLvA" association="_YiQXEF2nEfGI7OcajRccyg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YiSzUV2nEfGI7OcajRccyg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YiTaYF2nEfGI7OcajRccyg" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_YiQXEF2nEfGI7OcajRccyg" memberEnd="_YiSzUF2nEfGI7OcajRccyg _YiTaYV2nEfGI7OcajRccyg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YiSMQF2nEfGI7OcajRccyg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YiSMQV2nEfGI7OcajRccyg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_YiTaYV2nEfGI7OcajRccyg" name="notificationimpl" type="_eEEPQF2mEfGI7OcajRccyg" association="_YiQXEF2nEfGI7OcajRccyg"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bOBkgELyEfG1Vb9L88SUjQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bOdpYELyEfG1Vb9L88SUjQ" source="PapyrusVersion">
@@ -148,4 +163,8 @@
   <umlvmprofile:pk xmi:id="_cZRRkEiCEfGJlqplkR1iEg" base_Property="_UeGKwEiCEfGJlqplkR1iEg"/>
   <umlvmprofile:module xmi:id="_ywt0sEiCEfGJlqplkR1iEg" base_Package="_uzDsUEiCEfGJlqplkR1iEg"/>
   <umlvmprofile:pk xmi:id="_bB9D4EiDEfGJlqplkR1iEg" base_Property="__pA80EiCEfGJlqplkR1iEg"/>
+  <umlvmprofile:delta xmi:id="_T6k2wF2mEfGI7OcajRccyg" base_Package="_NCqjwF2mEfGI7OcajRccyg"/>
+  <umlvmprofile:modifiedClass xmi:id="_hgNmAF2mEfGI7OcajRccyg" base_Class="_eEEPQF2mEfGI7OcajRccyg"/>
+  <umlvmprofile:adds xmi:id="_Qeoe4F2nEfGI7OcajRccyg" base_Property="_DQSOQF2nEfGI7OcajRccyg"/>
+  <umlvmprofile:modifies xmi:id="_vMWwcF2nEfGI7OcajRccyg" base_Association="_YiQXEF2nEfGI7OcajRccyg"/>
 </xmi:XMI>
