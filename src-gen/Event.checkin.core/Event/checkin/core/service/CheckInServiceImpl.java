@@ -24,10 +24,12 @@ public class CheckInServiceImpl extends CheckInServiceComponent{
 
     public CheckIn createCheckIn(Map<String, Object> requestBody){
 		boolean attended = (boolean) requestBody.get("attended");
+		String attendeeIdStr = (String) requestBody.get("attendeeId");
+		int attendeeId = Integer.parseInt(attendeeIdStr);
 		
 		//to do: fix association attributes
 		
-		CheckIn checkin = CheckInFactory.createCheckIn("Event.checkin.core.model.CheckInImpl", attended, attendeemanagementimpl);
+		CheckIn checkin = CheckInFactory.createCheckIn("Event.checkin.core.model.CheckInImpl", attended, attendeeId);
 		Repository.saveObject(checkin);
 		return checkin;
 	}
@@ -35,9 +37,11 @@ public class CheckInServiceImpl extends CheckInServiceComponent{
 	public CheckIn createCheckIn(Map<String, Object> requestBody, int id){
 		int checkInId = id;
 		boolean attended = (boolean) requestBody.get("attended");
+		String attendeeIdStr = (String) requestBody.get("attendeeId");
+		int attendeeId = Integer.parseInt(attendeeIdStr);
 		
 		//to do: fix association attributes
-		CheckIn checkin = CheckInFactory.createCheckIn("Event.checkin.core.model.CheckInImpl",checkInId, attended, attendeemanagementimpl);
+		CheckIn checkin = CheckInFactory.createCheckIn("Event.checkin.core.model.CheckInImpl",checkInId, attended, attendeeId);
 		Repository.saveObject(checkin);
 		return checkin;
 	}
@@ -48,6 +52,9 @@ public class CheckInServiceImpl extends CheckInServiceComponent{
 		CheckIn checkin = Repository.getObject(id);
 		
 		checkin.setAttended((String) requestBody.get("attended"));
+		String attendeeIdStr = (String) requestBody.get("attendeeId");
+		checkin.setAttendeeId(Integer.parseInt(attendeeIdStr));
+		
 		
 		Repository.updateObject(checkin);
 		

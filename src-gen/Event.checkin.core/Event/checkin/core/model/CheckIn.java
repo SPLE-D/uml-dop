@@ -9,7 +9,7 @@ public interface CheckIn {
 	    public void setCheckInId(int checkInId);
 	    public boolean getAttended();
 	    public void setAttended(boolean attended);
-	    public AttendeeManagementImpl getAttendeemanagementimpl();
-	    public void setAttendeemanagementimpl(AttendeeManagementImpl attendeemanagementimpl);
+	    public int getAttendeeId();
+	    public void setAttendeeId(int attendeeId);
 	HashMap<String, Object> toHashMap();
 }

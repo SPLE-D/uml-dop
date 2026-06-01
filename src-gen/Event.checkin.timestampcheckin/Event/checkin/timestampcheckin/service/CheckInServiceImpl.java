@@ -21,8 +21,10 @@ public class CheckInServiceImpl extends CheckInServiceDecorator {
 		String checkInIdStr = (String) requestBody.get("checkInId");
 		int checkInId = Integer.parseInt(checkInIdStr);
 		boolean attended = (boolean) requestBody.get("attended");
+		String attendeeIdStr = (String) requestBody.get("attendeeId");
+		int attendeeId = Integer.parseInt(attendeeIdStr);
 		CheckIn checkintimestampcheckin = record.createCheckIn(requestBody);
-		CheckIn checkintimestampcheckindeco = CheckInFactory.createCheckIn("Event.checkin.timestampcheckin", checkintimestampcheckin, checkInId, attended, attendeemanagementimpl, timestamp);
+		CheckIn checkintimestampcheckindeco = CheckInFactory.createCheckIn("Event.checkin.timestampcheckin", checkintimestampcheckin, checkInId, attended, attendeeId, timestamp);
 		Repository.saveObject(checkintimestampcheckindeco);
 		return checkintimestampcheckindeco;
 	}
@@ -32,9 +34,11 @@ public class CheckInServiceImpl extends CheckInServiceDecorator {
 		String checkInIdStr = (String) requestBody.get("checkInId");
 		int checkInId = Integer.parseInt(checkInIdStr);
 		boolean attended = (boolean) requestBody.get("attended");
+		String attendeeIdStr = (String) requestBody.get("attendeeId");
+		int attendeeId = Integer.parseInt(attendeeIdStr);
 		UUID recordCheckInCheckInId = ((CheckInDecorator) savedCheckIn).getCheckInId();
 		CheckIn CheckIn = record.createCheckIn(requestBody, recordCheckInCheckInId);
-		CheckIn checkintimestampcheckin = CheckInFactory.createCheckIn("Event.checkin.timestampcheckin.model.CheckInImpl", CheckIn, checkInId, attended, attendeemanagementimpl, timestamp);
+		CheckIn checkintimestampcheckin = CheckInFactory.createCheckIn("Event.checkin.timestampcheckin.model.CheckInImpl", CheckIn, checkInId, attended, attendeeId, timestamp);
 		return checkintimestampcheckin;
 	}
 

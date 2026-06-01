@@ -171,4 +171,5 @@
   <umlvmprofile:modifiedClass xmi:id="_Dp-fEFN_EfGIgMAuQAXF3g" base_Class="_-e9LsFN-EfGIgMAuQAXF3g"/>
   <umlvmprofile:adds xmi:id="_P4EzoFN_EfGIgMAuQAXF3g" base_Property="_FTk6IFN_EfGIgMAuQAXF3g"/>
   <umlvmprofile:delta xmi:id="_m5UhsFN_EfGIgMAuQAXF3g" base_Package="_v10YEFN-EfGIgMAuQAXF3g"/>
+  <umlvmprofile:modifies xmi:id="_8Icc8F1mEfG7s7BQH0kx9g" base_Association="_SvdYAF1lEfG7s7BQH0kx9g"/>
 </xmi:XMI>
