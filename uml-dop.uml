@@ -128,18 +128,18 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_FTk6IFN_EfGIgMAuQAXF3g" name="timestamp">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_SvgbUF1lEfG7s7BQH0kx9g" name="checkinimpl" type="_Z6wdcEMAEfG1Y49jyyuFTQ" association="_SvdYAF1lEfG7s7BQH0kx9g">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SvgbUV1lEfG7s7BQH0kx9g"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SvhCYF1lEfG7s7BQH0kx9g" value="1"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_uctyQF5iEfGxMLvu-IeFww" name="checkinimpl" type="_Z6wdcEMAEfG1Y49jyyuFTQ" association="_ucqu8F5iEfGxMLvu-IeFww">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uctyQV5iEfGxMLvu-IeFww"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ucuZUF5iEfGxMLvu-IeFww" value="1"/>
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_SvdYAF1lEfG7s7BQH0kx9g" visibility="package" memberEnd="_SvgbUF1lEfG7s7BQH0kx9g _SvhCYV1lEfG7s7BQH0kx9g">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Svf0QF1lEfG7s7BQH0kx9g" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Svf0QV1lEfG7s7BQH0kx9g" key="nature" value="UML_Nature"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ucqu8F5iEfGxMLvu-IeFww" memberEnd="_uctyQF5iEfGxMLvu-IeFww _ucuZUV5iEfGxMLvu-IeFww">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uctLMF5iEfGxMLvu-IeFww" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uctLMV5iEfGxMLvu-IeFww" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_SvhCYV1lEfG7s7BQH0kx9g" name="checkinimpl" type="_-e9LsFN-EfGIgMAuQAXF3g" association="_SvdYAF1lEfG7s7BQH0kx9g"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ucuZUV5iEfGxMLvu-IeFww" name="checkinimpl" type="_-e9LsFN-EfGIgMAuQAXF3g" association="_ucqu8F5iEfGxMLvu-IeFww"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bOBkgELyEfG1Vb9L88SUjQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bOdpYELyEfG1Vb9L88SUjQ" source="PapyrusVersion">
@@ -171,5 +171,5 @@
   <umlvmprofile:modifiedClass xmi:id="_Dp-fEFN_EfGIgMAuQAXF3g" base_Class="_-e9LsFN-EfGIgMAuQAXF3g"/>
   <umlvmprofile:adds xmi:id="_P4EzoFN_EfGIgMAuQAXF3g" base_Property="_FTk6IFN_EfGIgMAuQAXF3g"/>
   <umlvmprofile:delta xmi:id="_m5UhsFN_EfGIgMAuQAXF3g" base_Package="_v10YEFN-EfGIgMAuQAXF3g"/>
-  <umlvmprofile:modifies xmi:id="_8Icc8F1mEfG7s7BQH0kx9g" base_Association="_SvdYAF1lEfG7s7BQH0kx9g"/>
+  <umlvmprofile:modifies xmi:id="_xcwb0F5iEfGxMLvu-IeFww" base_Association="_ucqu8F5iEfGxMLvu-IeFww"/>
 </xmi:XMI>
