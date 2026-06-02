@@ -1,4 +1,4 @@
-package uml-dop.attendeemanagement.classattendeemanagement.model;
+package Event.attendeemanagement.classattendeemanagement.model;
 
 import java.util.*;
 import java.lang.*;
@@ -9,9 +9,9 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Column;
 
-import uml-dop.attendeemanagement.core.model.AttendeeManagementDecorator;
-import uml-dop.attendeemanagement.core.model.AttendeeManagement;
-import uml-dop.attendeemanagement.core.model.AttendeeManagementComponent;
+import Event.attendeemanagement.core.model.AttendeeManagementDecorator;
+import Event.attendeemanagement.core.model.AttendeeManagement;
+import Event.attendeemanagement.core.model.AttendeeManagementComponent;
 
 @Entity(name="attendeemanagement_classattendeemanagement")
 @Table(name="attendeemanagement_classattendeemanagement")

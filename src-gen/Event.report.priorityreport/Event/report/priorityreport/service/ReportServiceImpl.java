@@ -1,16 +1,16 @@
-package uml-dop.report.priorityreport.service;
+package Event.report.priorityreport.service;
 
 import java.util.*;
 import java.lang.*;
 
 import id.ac.ui.cs.prices.winvmj.core.VMJExchange;
 
-import uml-dop.report.core.service.ReportServiceDecorator;
-import uml-dop.report.core.model.ReportImpl;
-import uml-dop.report.core.service.ReportServiceComponent;
-import uml-dop.report.core.model.Report;
-import uml-dop.report.core.model.ReportDecorator;
-import uml-dop.report.ReportFactory;
+import Event.report.core.service.ReportServiceDecorator;
+import Event.report.core.model.ReportImpl;
+import Event.report.core.service.ReportServiceComponent;
+import Event.report.core.model.Report;
+import Event.report.core.model.ReportDecorator;
+import Event.report.ReportFactory;
 
 public class ReportServiceImpl extends ReportServiceDecorator {
     public ReportServiceImpl (ReportServiceComponent record) {
@@ -26,7 +26,7 @@ public class ReportServiceImpl extends ReportServiceDecorator {
 		int totalRevenue = Integer.parseInt(totalRevenueStr);
 		String summary = (String) requestBody.get("summary");
 		Report reportpriorityreport = record.createReport(requestBody);
-		Report reportpriorityreportdeco = ReportFactory.createReport("uml-dop.report.priorityreport.model.ReportImpl", reportpriorityreport, PriorityReport);
+		Report reportpriorityreportdeco = ReportFactory.createReport("Event.report.priorityreport.model.ReportImpl", reportpriorityreport, PriorityReport);
 		Repository.saveObject(reportpriorityreportdeco);
 		return reportpriorityreportdeco;
 	}
@@ -35,7 +35,7 @@ public class ReportServiceImpl extends ReportServiceDecorator {
 		Report savedReport = Repository.getObject(id);
 		UUID recordReportReportId = ((ReportDecorator) savedReport).getReportId();
 		Report report = record.createReport(requestBody, recordReportReportId);
-		Report reportpriorityreport = ReportFactory.createReport("uml-dop.report.priorityreport.ReportImpl", report, PriorityReport);
+		Report reportpriorityreport = ReportFactory.createReport("Event.report.priorityreport.ReportImpl", report, PriorityReport);
 		return reportpriorityreport;
 	}
 

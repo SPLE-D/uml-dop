@@ -173,7 +173,6 @@
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
-    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_ODgtcFN5EfG6LY8PoXJ8DA" name="DPriorityReport">
       <packagedElement xmi:type="uml:Class" xmi:id="_eyAEAFN5EfG6LY8PoXJ8DA" name="ReportImpl">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_yW4Y4VN5EfG6LY8PoXJ8DA" name="reportimpl" type="_GN0jEEiCEfGJlqplkR1iEg" association="_yW3x0FN5EfG6LY8PoXJ8DA">
@@ -200,6 +199,7 @@
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
+    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_haTKgFNOEfGiH6Q1wWpgzg" memberEnd="_haUYolNOEfGiH6Q1wWpgzg _haU_sVNOEfGiH6Q1wWpgzg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_haUYoFNOEfGiH6Q1wWpgzg" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_haUYoVNOEfGiH6Q1wWpgzg" key="nature" value="UML_Nature"/>

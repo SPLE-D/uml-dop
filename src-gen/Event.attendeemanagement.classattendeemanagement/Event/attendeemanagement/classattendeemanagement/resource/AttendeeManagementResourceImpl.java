@@ -1,4 +1,4 @@
-package uml-dop.attendeemanagement.classattendeemanagement.resource;
+package Event.attendeemanagement.classattendeemanagement.resource;
 import java.util.*;
 import java.lang.*;
 
@@ -6,12 +6,12 @@ import id.ac.ui.cs.prices.winvmj.core.Route;
 import id.ac.ui.cs.prices.winvmj.core.VMJExchange;
 import id.ac.ui.cs.prices.winvmj.core.exceptions.*;
 
-import uml-dop.attendeemanagement.core.resource.AttendeeManagementResourceDecorator;
-import uml-dop.attendeemanagement.core.resource.AttendeeManagementResourceComponent;
-import uml-dop.attendeemanagement.core.model.AttendeeManagement;
-import uml-dop.attendeemanagement.core.model.AttendeeManagementImpl;
-import uml-dop.attendeemanagement.core.service.AttendeeManagementServiceComponent;
-import uml-dop.attendeemanagement.classattendeemanagement.service.AttendeeManagementServiceImpl;
+import Event.attendeemanagement.core.resource.AttendeeManagementResourceDecorator;
+import Event.attendeemanagement.core.resource.AttendeeManagementResourceComponent;
+import Event.attendeemanagement.core.model.AttendeeManagement;
+import Event.attendeemanagement.core.model.AttendeeManagementImpl;
+import Event.attendeemanagement.core.service.AttendeeManagementServiceComponent;
+import Event.attendeemanagement.classattendeemanagement.service.AttendeeManagementServiceImpl;
 
 public class AttendeeManagementResourceImpl extends AttendeeManagementResourceDecorator {
 	private AttendeeManagementServiceComponent attendeemanagementclassattendeemanagementServiceImpl;

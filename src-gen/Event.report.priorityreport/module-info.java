@@ -1,8 +1,8 @@
-module uml-dop.report.priorityreport {
-	requires uml-dop.report.core;
-	exports uml-dop.report.priorityreport.model;
-	exports uml-dop.report.priorityreport.resource;
-	exports uml-dop.report.priorityreport.service;
+module Event.report.priorityreport {
+	requires Event.report.core;
+	exports Event.report.priorityreport.model;
+	exports Event.report.priorityreport.resource;
+	exports Event.report.priorityreport.service;
 
 	requires id.ac.ui.cs.prices.winvmj.core;
 	requires id.ac.ui.cs.prices.winvmj.hibernate;
@@ -12,5 +12,5 @@ module uml-dop.report.priorityreport {
 	requires java.naming;
 	requires java.net.http;
 
-	opens uml-dop.report.priorityreport.model to org.hibernate.orm.core, gson, id.ac.ui.cs.prices.winvmj.hibernate;
+	opens Event.report.priorityreport.model to org.hibernate.orm.core, gson, id.ac.ui.cs.prices.winvmj.hibernate;
 }

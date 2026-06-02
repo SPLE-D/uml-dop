@@ -1,4 +1,4 @@
-package uml-dop.report.priorityreport.resource;
+package Event.report.priorityreport.resource;
 import java.util.*;
 import java.lang.*;
 
@@ -6,12 +6,12 @@ import id.ac.ui.cs.prices.winvmj.core.Route;
 import id.ac.ui.cs.prices.winvmj.core.VMJExchange;
 import id.ac.ui.cs.prices.winvmj.core.exceptions.*;
 
-import uml-dop.report.core.resource.ReportResourceDecorator;
-import uml-dop.report.core.resource.ReportResourceComponent;
-import uml-dop.report.core.model.Report;
-import uml-dop.report.core.model.ReportImpl;
-import uml-dop.report.core.service.ReportServiceComponent;
-import uml-dop.report.priorityreport.service.ReportServiceImpl;
+import Event.report.core.resource.ReportResourceDecorator;
+import Event.report.core.resource.ReportResourceComponent;
+import Event.report.core.model.Report;
+import Event.report.core.model.ReportImpl;
+import Event.report.core.service.ReportServiceComponent;
+import Event.report.priorityreport.service.ReportServiceImpl;
 
 public class ReportResourceImpl extends ReportResourceDecorator {
 	private ReportServiceComponent reportpriorityreportServiceImpl;

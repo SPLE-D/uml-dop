@@ -1,4 +1,4 @@
-package uml-dop.report.priorityreport.model;
+package Event.report.priorityreport.model;
 
 import java.util.*;
 import java.lang.*;
@@ -9,9 +9,9 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Column;
 
-import uml-dop.report.core.model.ReportDecorator;
-import uml-dop.report.core.model.Report;
-import uml-dop.report.core.model.ReportComponent;
+import Event.report.core.model.ReportDecorator;
+import Event.report.core.model.Report;
+import Event.report.core.model.ReportComponent;
 
 @Entity(name="report_priorityreport")
 @Table(name="report_priorityreport")

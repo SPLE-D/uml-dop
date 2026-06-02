@@ -1,16 +1,16 @@
-package uml-dop.attendeemanagement.classattendeemanagement.service;
+package Event.attendeemanagement.classattendeemanagement.service;
 
 import java.util.*;
 import java.lang.*;
 
 import id.ac.ui.cs.prices.winvmj.core.VMJExchange;
 
-import uml-dop.attendeemanagement.core.service.AttendeeManagementServiceDecorator;
-import uml-dop.attendeemanagement.core.model.AttendeeManagementImpl;
-import uml-dop.attendeemanagement.core.service.AttendeeManagementServiceComponent;
-import uml-dop.attendeemanagement.core.model.AttendeeManagement;
-import uml-dop.attendeemanagement.core.model.AttendeeManagementDecorator;
-import uml-dop.attendeemanagement.AttendeeManagementFactory;
+import Event.attendeemanagement.core.service.AttendeeManagementServiceDecorator;
+import Event.attendeemanagement.core.model.AttendeeManagementImpl;
+import Event.attendeemanagement.core.service.AttendeeManagementServiceComponent;
+import Event.attendeemanagement.core.model.AttendeeManagement;
+import Event.attendeemanagement.core.model.AttendeeManagementDecorator;
+import Event.attendeemanagement.AttendeeManagementFactory;
 
 public class AttendeeManagementServiceImpl extends AttendeeManagementServiceDecorator {
     public AttendeeManagementServiceImpl (AttendeeManagementServiceComponent record) {
@@ -22,7 +22,7 @@ public class AttendeeManagementServiceImpl extends AttendeeManagementServiceDeco
 		String phoneNumber = (String) requestBody.get("phoneNumber");
 		String email = (String) requestBody.get("email");
 		AttendeeManagement attendeemanagementclassattendeemanagement = record.createAttendeeManagement(requestBody);
-		AttendeeManagement attendeemanagementclassattendeemanagementdeco = AttendeeManagementFactory.createAttendeeManagement("uml-dop.attendeemanagement.classattendeemanagement.model.AttendeeManagementImpl", attendeemanagementclassattendeemanagement, attendeeClass);
+		AttendeeManagement attendeemanagementclassattendeemanagementdeco = AttendeeManagementFactory.createAttendeeManagement("Event.attendeemanagement.classattendeemanagement.model.AttendeeManagementImpl", attendeemanagementclassattendeemanagement, attendeeClass);
 		Repository.saveObject(attendeemanagementclassattendeemanagementdeco);
 		return attendeemanagementclassattendeemanagementdeco;
 	}
@@ -32,7 +32,7 @@ public class AttendeeManagementServiceImpl extends AttendeeManagementServiceDeco
 		String attendeeClass = (String) requestBody.get("attendeeClass");
 		UUID recordAttendeeManagementAttendeeId = ((AttendeeManagementDecorator) savedAttendeeManagement).getAttendeeId();
 		AttendeeManagement attendeemanagement = record.createAttendeeManagement(requestBody, recordAttendeeManagementAttendeeId);
-		AttendeeManagement attendeemanagementclassattendeemanagement = AttendeeManagementFactory.createAttendeeManagement("uml-dop.attendeemanagement.classattendeemanagement.AttendeeManagementImpl", attendeemanagement, attendeeClass);
+		AttendeeManagement attendeemanagementclassattendeemanagement = AttendeeManagementFactory.createAttendeeManagement("Event.attendeemanagement.classattendeemanagement.AttendeeManagementImpl", attendeemanagement, attendeeClass);
 		return attendeemanagementclassattendeemanagement;
 	}
 
