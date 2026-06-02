@@ -21,6 +21,8 @@ public class AttendeeManagementServiceImpl extends AttendeeManagementServiceDeco
 		String attendeeClass = (String) requestBody.get("attendeeClass");
 		String phoneNumber = (String) requestBody.get("phoneNumber");
 		String email = (String) requestBody.get("email");
+		String eventIdStr = (String) requestBody.get("eventId");
+		int eventId = Integer.parseInt(eventIdStr);
 		AttendeeManagement attendeemanagementclassattendeemanagement = record.createAttendeeManagement(requestBody);
 		AttendeeManagement attendeemanagementclassattendeemanagementdeco = AttendeeManagementFactory.createAttendeeManagement("Event.attendeemanagement.classattendeemanagement.model.AttendeeManagementImpl", attendeemanagementclassattendeemanagement, attendeeClass);
 		Repository.saveObject(attendeemanagementclassattendeemanagementdeco);

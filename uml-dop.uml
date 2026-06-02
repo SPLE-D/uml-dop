@@ -61,6 +61,11 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_GM1kQEiFEfGJlqplkR1iEg" name="email" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tUVd0F52EfGOSraGFRGx0w" name="eventId" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_31UJQF52EfGOSraGFRGx0w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3xjqoF52EfGOSraGFRGx0w" value="*"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_oN6uIEMNEfGD1KWMcrYNXA" client="_HMX_0EMNEfGD1KWMcrYNXA" supplier="_BuCu4EMNEfGD1KWMcrYNXA" contract="_BuCu4EMNEfGD1KWMcrYNXA"/>
         </packagedElement>
       </packagedElement>
@@ -190,8 +195,10 @@
     </packagedElement>
 <packagedElement xmi:type="uml:Package" xmi:id="_CjLXcFNxEfGSmYgvmu7KnQ" name="DClassAttendeeManagement">
         <packagedElement xmi:type="uml:Class" xmi:id="_dS7XkFNxEfGSmYgvmu7KnQ" name="AttendeeManagementImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_5-4MYFN2EfGSmYgvmu7KnQ" name="attendeeClass" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5-4MYFN2EfGSmYgvmu7KnQ" name="attendeeClass" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KOt_AF2yEfGIzuKUdlAhJw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KMg_kF2yEfGIzuKUdlAhJw" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_RWyNUFN_EfGSmYgvmu7KnQ" type="_HMX_0EMNEfGD1KWMcrYNXA" association="_RWq4kFN_EfGSmYgvmu7KnQ">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RWyNUVN_EfGSmYgvmu7KnQ"/>

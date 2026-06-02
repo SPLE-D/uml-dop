@@ -17,7 +17,7 @@ import Event.attendeemanagement.core.model.AttendeeManagementComponent;
 @Table(name="attendeemanagement_classattendeemanagement")
 public class AttendeeManagementImpl extends AttendeeManagementDecorator {
 
-	public String attendeeClass;
+	protected String attendeeClass;
 	public AttendeeManagementImpl() {
         super();
 		Random r = new Random();
@@ -31,6 +31,13 @@ public class AttendeeManagementImpl extends AttendeeManagementDecorator {
 		this.objectName = AttendeeManagementImpl.class.getName();
 	}
 
+	public String getAttendeeClass() {
+		return this.attendeeClass;
+	}
+
+	public void setAttendeeClass(String attendeeClass) {
+		this.attendeeClass = attendeeClass;
+	}
 
 
 	public HashMap<String, Object> toHashMap() {

@@ -11,5 +11,7 @@ public interface AttendeeManagement {
 	    public void setPhoneNumber(String phoneNumber);
 	    public String getEmail();
 	    public void setEmail(String email);
+	    public int getEventId();
+	    public void setEventId(int eventId);
 	HashMap<String, Object> toHashMap();
 }
