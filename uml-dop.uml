@@ -147,8 +147,8 @@
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
-<packagedElement xmi:type="uml:Package" xmi:id="_NCqjwF2mEfGI7OcajRccyg" name="DTargetedNotification">
-              <packagedElement xmi:type="uml:Class" xmi:id="_eEEPQF2mEfGI7OcajRccyg" name="NotificationImpl">
+      <packagedElement xmi:type="uml:Package" xmi:id="_NCqjwF2mEfGI7OcajRccyg" name="DTargetedNotification">
+        <packagedElement xmi:type="uml:Class" xmi:id="_eEEPQF2mEfGI7OcajRccyg" name="NotificationImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_DQSOQF2nEfGI7OcajRccyg" name="target">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
@@ -175,14 +175,13 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_SvhCYV1lEfG7s7BQH0kx9g" name="checkinimpl" type="_-e9LsFN-EfGIgMAuQAXF3g" association="_SvdYAF1lEfG7s7BQH0kx9g"/>
     </packagedElement>
-<packagedElement xmi:type="uml:Association" xmi:id="_YiQXEF2nEfGI7OcajRccyg" memberEnd="_YiSzUF2nEfGI7OcajRccyg _YiTaYV2nEfGI7OcajRccyg">
+    <packagedElement xmi:type="uml:Association" xmi:id="_YiQXEF2nEfGI7OcajRccyg" memberEnd="_YiSzUF2nEfGI7OcajRccyg _YiTaYV2nEfGI7OcajRccyg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YiSMQF2nEfGI7OcajRccyg" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YiSMQV2nEfGI7OcajRccyg" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_YiTaYV2nEfGI7OcajRccyg" name="notificationimpl" type="_eEEPQF2mEfGI7OcajRccyg" association="_YiQXEF2nEfGI7OcajRccyg"/>
     </packagedElement>
-
-<packagedElement xmi:type="uml:Association" xmi:id="_PPsToF20EfGJUa_XxAxTuA" memberEnd="_PP0PcF20EfGJUa_XxAxTuA _PP3SwF20EfGJUa_XxAxTuA">
+    <packagedElement xmi:type="uml:Association" xmi:id="_PPsToF20EfGJUa_XxAxTuA" memberEnd="_PP0PcF20EfGJUa_XxAxTuA _PP3SwF20EfGJUa_XxAxTuA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PPyaQF20EfGJUa_XxAxTuA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PPzBUF20EfGJUa_XxAxTuA" key="nature" value="UML_Nature"/>
       </eAnnotations>
