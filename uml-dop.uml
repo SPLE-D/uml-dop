@@ -45,7 +45,6 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_tJEO8EMMEfGD1KWMcrYNXA" client="_QNvkkEMLEfGD1KWMcrYNXA" supplier="_USkE4EMLEfGD1KWMcrYNXA" contract="_USkE4EMLEfGD1KWMcrYNXA"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Interface" xmi:id="_USkE4EMLEfGD1KWMcrYNXA" name="EventCreation"/>
-        <packagedElement xmi:type="uml:DataType" xmi:id="__x_YUFNnEfGiH6Q1wWpgzg" name="DataType3"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_7uoxMEMMEfGD1KWMcrYNXA" name="MAttendeeManagement">
         <packagedElement xmi:type="uml:Interface" xmi:id="_BuCu4EMNEfGD1KWMcrYNXA" name="AttendeeManagement"/>
