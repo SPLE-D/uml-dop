@@ -25,10 +25,12 @@ public class AttendeeManagementServiceImpl extends AttendeeManagementServiceComp
     public AttendeeManagement createAttendeeManagement(Map<String, Object> requestBody){
 		String phoneNumber = (String) requestBody.get("phoneNumber");
 		String email = (String) requestBody.get("email");
+		String eventIdStr = (String) requestBody.get("eventId");
+		int eventId = Integer.parseInt(eventIdStr);
 		
 		//to do: fix association attributes
 		
-		AttendeeManagement attendeemanagement = AttendeeManagementFactory.createAttendeeManagement("Event.attendeemanagement.core.model.AttendeeManagementImpl", phoneNumber, email);
+		AttendeeManagement attendeemanagement = AttendeeManagementFactory.createAttendeeManagement("Event.attendeemanagement.core.model.AttendeeManagementImpl", phoneNumber, email, eventId);
 		Repository.saveObject(attendeemanagement);
 		return attendeemanagement;
 	}
@@ -37,9 +39,11 @@ public class AttendeeManagementServiceImpl extends AttendeeManagementServiceComp
 		int attendeeId = id;
 		String phoneNumber = (String) requestBody.get("phoneNumber");
 		String email = (String) requestBody.get("email");
+		String eventIdStr = (String) requestBody.get("eventId");
+		int eventId = Integer.parseInt(eventIdStr);
 		
 		//to do: fix association attributes
-		AttendeeManagement attendeemanagement = AttendeeManagementFactory.createAttendeeManagement("Event.attendeemanagement.core.model.AttendeeManagementImpl",attendeeId, phoneNumber, email);
+		AttendeeManagement attendeemanagement = AttendeeManagementFactory.createAttendeeManagement("Event.attendeemanagement.core.model.AttendeeManagementImpl",attendeeId, phoneNumber, email, eventId);
 		Repository.saveObject(attendeemanagement);
 		return attendeemanagement;
 	}
@@ -51,6 +55,9 @@ public class AttendeeManagementServiceImpl extends AttendeeManagementServiceComp
 		
 		attendeemanagement.setPhoneNumber((String) requestBody.get("phoneNumber"));
 		attendeemanagement.setEmail((String) requestBody.get("email"));
+		String eventIdStr = (String) requestBody.get("eventId");
+		attendeemanagement.setEventId(Integer.parseInt(eventIdStr));
+		
 		
 		Repository.updateObject(attendeemanagement);
 		

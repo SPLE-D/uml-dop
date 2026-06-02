@@ -23,8 +23,10 @@ public class AttendeeManagementServiceImpl extends AttendeeManagementServiceDeco
 		int attendeeId = Integer.parseInt(attendeeIdStr);
 		String phoneNumber = (String) requestBody.get("phoneNumber");
 		String email = (String) requestBody.get("email");
+		String eventIdStr = (String) requestBody.get("eventId");
+		int eventId = Integer.parseInt(eventIdStr);
 		AttendeeManagement attendeemanagementclassattendeemanagement = record.createAttendeeManagement(requestBody);
-		AttendeeManagement attendeemanagementclassattendeemanagementdeco = AttendeeManagementFactory.createAttendeeManagement("Event.attendeemanagement.classattendeemanagement", attendeemanagementclassattendeemanagement, attendeeId, phoneNumber, email, attendeeClass);
+		AttendeeManagement attendeemanagementclassattendeemanagementdeco = AttendeeManagementFactory.createAttendeeManagement("Event.attendeemanagement.classattendeemanagement", attendeemanagementclassattendeemanagement, attendeeId, phoneNumber, email, eventId, attendeeClass);
 		Repository.saveObject(attendeemanagementclassattendeemanagementdeco);
 		return attendeemanagementclassattendeemanagementdeco;
 	}
@@ -36,9 +38,11 @@ public class AttendeeManagementServiceImpl extends AttendeeManagementServiceDeco
 		int attendeeId = Integer.parseInt(attendeeIdStr);
 		String phoneNumber = (String) requestBody.get("phoneNumber");
 		String email = (String) requestBody.get("email");
+		String eventIdStr = (String) requestBody.get("eventId");
+		int eventId = Integer.parseInt(eventIdStr);
 		UUID recordAttendeeManagementAttendeeId = ((AttendeeManagementDecorator) savedAttendeeManagement).getAttendeeId();
 		AttendeeManagement AttendeeManagement = record.createAttendeeManagement(requestBody, recordAttendeeManagementAttendeeId);
-		AttendeeManagement attendeemanagementclassattendeemanagement = AttendeeManagementFactory.createAttendeeManagement("Event.attendeemanagement.classattendeemanagement.model.AttendeeManagementImpl", AttendeeManagement, attendeeId, phoneNumber, email, attendeeClass);
+		AttendeeManagement attendeemanagementclassattendeemanagement = AttendeeManagementFactory.createAttendeeManagement("Event.attendeemanagement.classattendeemanagement.model.AttendeeManagementImpl", AttendeeManagement, attendeeId, phoneNumber, email, eventId, attendeeClass);
 		return attendeemanagementclassattendeemanagement;
 	}
 
